@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NMS // Refiner Terminal</title>
+    <link rel="icon" type="image/x-icon" href="/icons/refiner.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta property="og:title" content="NMS // REFINER TERMINAL">
+    <meta property="og:description" content="Access the Atlas Refiner Database. 16 // 16 // 16">
+    <meta property="og:image" content="crazy_site.png">
+    <meta name="theme-color" content="#00f2ff">
+</head>
+<body>
+    <div class="stars"></div>
+
+    <header>
+        <div class="logo-container">
+            <div class="atlas-diamond"></div>
+            <div class="logo">TERMINAL // REFINER_v0.1</div>
+        </div>
+    </header>
+
+    <main>
+        <div class="refiner-wrapper">
+            <nav class="refiner-tabs">
+                <button class="tab-btn active" data-type="small">Small</button>
+                <button class="tab-btn" data-type="medium">Medium</button>
+                <button class="tab-btn" data-type="large">Large</button>
+            </nav>
+
+            <section class="refiner-container">
+                <div class="refiner-header">
+                    <div class="status-dot green"></div>
+                    <h2 id="refiner-name">Portable Refiner // MK-I</h2>
+                </div>
+                
+
+                <div class="refiner-grid" id="refiner-grid">
+                    <div class="slot-group">
+                        <div class="slot input" data-label="INPUT 01">
+                            <div class="slot-icon" id="input-01-icon">--</div>
+                            <span class="slot-count" id="input-01-count">0</span>
+                        </div>
+                        
+                        <div class="plus-icon slot-2-extra">+</div>
+                        <div class="slot input slot-2-extra" data-label="INPUT 02">
+                            <div class="slot-icon" id="input-02-icon">--</div>
+                            <span class="slot-count" id="input-02-count">0</span>
+                        </div>
+
+                        <div class="plus-icon slot-3-extra">+</div>
+                        <div class="slot input slot-3-extra" data-label="INPUT 03">
+                            <div class="slot-icon" id="input-03-icon">--</div>
+                            <span class="slot-count" id="input-03-count">0</span>
+                        </div>
+                    </div>
+
+                    <div class="process-arrow">▶</div>
+
+                    <div class="slot-group">
+                        <div class="slot output" id="main-output-slot" data-label="SELECT OUTPUT">
+                            <div class="slot-icon result">?</div>
+                            <span class="slot-count">--</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="info-panel-container">
+                    </div>
+
+                <div class="action-bar">
+                    <button class="clear-btn" id="clear-terminal-btn">CLEAR TERMINAL</button>
+                    <button class="refine-btn" id="refine-btn">BEGIN PROCESSING</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <div id="material-modal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>ATLAS DATABASE // MATERIALS</h3>
+                <button id="close-modal" class="close-btn">&times;</button>
+            </div>
+            
+            <div class="search-container">
+                <input type="text" id="mat-search" placeholder="Filter by name or symbol..." autocomplete="off">
+            </div>
+
+            <div class="material-grid" id="material-selector-grid">
+                </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-grid">
+            <span>SYS // GALACTIC_COORD: 042F:0078:0D12:0079</span>
+            <div class="live-uplink">
+    <span class="signal-bar"></span>
+    <span class="traveller-label">TRAVELLERS_IN_SECTOR:</span>
+    <span id="live-count">0016</span>
+</div>
+            <span class="glitch">16 // 16 // 16</span>
+        </div>
+    </footer>
+    <div class="about-trigger" id="about-open">DATABASE_INFO // EXTRACT</div>
+
+<div id="about-modal" class="modal-overlay">
+
+    <div class="about-content">
+        <div class="modal-header">
+            <h3>TERMINAL_DIAGNOSTICS // ABT_V0.1</h3>
+            <button id="about-close" class="close-btn">&times;</button>
+        </div>
+        
+        <div class="about-body">
+            <div class="scanline"></div>
+            
+            <section class="diagnostic-block">
+                <span class="label">PROJECT:</span> <span class="value">REFINER_V0.1_TERMINAL</span><br>
+                <span class="label">AUTHOR:</span> <span class="value">VONNABE_THE_DRIFTER</span><br>
+                <span class="label">STATUS:</span> <span class="value">STABLE // NO_SIGNAL_LOSS</span>
+            </section>
+                <div class="support-module">
+    <span class="support-status">UPLINK_STABILITY: DEGRADING...</span>
+    <p class="support-text">Maintaining this terminal requires significant Nanite clusters. Support the iteration to keep the signal alive.</p>
+    <a href="https://buymeacoffee.com/vonnabe" target="_blank" class="coffee-link">
+        <span class="pulse-dot"></span>
+        DONATE_FUEL_RESERVES // COFFEE
+    </a>
+</div>
+
+            <section class="lore-text">
+                <p>This terminal was synthesized to solve the "API Signal Lost" anomaly. By utilizing a localized, high-speed JSON database, we ensure all Travellers have access to essential recipes even when the Interstellar Network (CORS) is disrupted by planetary interference.</p>
+            </section>
+
+            <div class="tech-specs">
+                <div class="spec-item">
+                    <span class="spec-title">DATABASE</span>
+                    <span class="spec-detail">Hardcoded JSON by : SCLARK39</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-title">INTERFACE</span>
+                    <span class="spec-detail">Custom CSS // Glassmorphism Engine</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-title">COMPATIBILITY</span>
+                    <span class="spec-detail">MK-I, MK-II, MK-III Standard Refiners</span>
+                </div>
+            </div>
+
+            <footer class="about-footer">
+                BOUNDARY_STRENGTH: 16 // 16 // 16
+            </footer>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,4617 @@
+{
+  "mats": {
+    "FUEL1": {
+      "Name": "Carbon",
+      "Symbol": "C",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/U4SUBSTANCES/SUBSTANCE.FUEL.1.DDS",
+      "Color": "BA3730"
+    },
+    "FUEL2": {
+      "Name": "Condensed Carbon",
+      "Symbol": "C+",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/U4SUBSTANCES/SUBSTANCE.FUEL.2.DDS",
+      "Color": "BA3730"
+    },
+    "OXYGEN": {
+      "Name": "Oxygen",
+      "Symbol": "O2",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/U4SUBSTANCES/SUBSTANCE.AIR.1.DDS",
+      "Color": "BA3730"
+    },
+    "LAUNCHSUB": {
+      "Name": "Di-hydrogen",
+      "Symbol": "H",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/U4SUBSTANCES/SUBSTANCE.LAUNCHSUB.1.DDS",
+      "Color": "345A7D"
+    },
+    "LAUNCHSUB2": {
+      "Name": "Deuterium",
+      "Symbol": "D",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/U4SUBSTANCES/SUBSTANCE.LAUNCHSUB.2.DDS",
+      "Color": "345A7D"
+    },
+    "ROCKETSUB": {
+      "Name": "Tritium",
+      "Symbol": "H3",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/U4SUBSTANCES/SUBSTANCE.ROCKETSUB.DDS",
+      "Color": "DDDCD1"
+    },
+    "LAND1": {
+      "Name": "Ferrite Dust",
+      "Symbol": "Fe",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/U4SUBSTANCES/SUBSTANCE.LAND.1.DDS",
+      "Color": "8A7E71"
+    },
+    "LAND2": {
+      "Name": "Pure Ferrite",
+      "Symbol": "Fe+",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/U4SUBSTANCES/SUBSTANCE.LAND.2.DDS",
+      "Color": "8A7E71"
+    },
+    "LAND3": {
+      "Name": "Magnetised Ferrite",
+      "Symbol": "Fe++",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/U4SUBSTANCES/SUBSTANCE.LAND.3.DDS",
+      "Color": "8A7E71"
+    },
+    "CATALYST1": {
+      "Name": "Sodium",
+      "Symbol": "Na",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/U4SUBSTANCES/SUBSTANCE.CATALYST.1.DDS",
+      "Color": "F16D14"
+    },
+    "CATALYST2": {
+      "Name": "Sodium Nitrate",
+      "Symbol": "Na+",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/U4SUBSTANCES/SUBSTANCE.CATALYST.2.DDS",
+      "Color": "F16D14"
+    },
+    "CAVE1": {
+      "Name": "Cobalt",
+      "Symbol": "Co",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/U4SUBSTANCES/SUBSTANCE.CAVE.1.DDS",
+      "Color": "05B83"
+    },
+    "CAVE2": {
+      "Name": "Ionised Cobalt",
+      "Symbol": "Co+",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/U4SUBSTANCES/SUBSTANCE.CAVE.2.DDS",
+      "Color": "05B83"
+    },
+    "WATER1": {
+      "Name": "Salt",
+      "Symbol": "NaCl",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/U4SUBSTANCES/SUBSTANCE.WATER.1.DDS",
+      "Color": "1E8A41"
+    },
+    "WATER2": {
+      "Name": "Chlorine",
+      "Symbol": "Cl",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/U4SUBSTANCES/SUBSTANCE.WATER.2.DDS",
+      "Color": "1E8A41"
+    },
+    "YELLOW2": {
+      "Name": "Copper",
+      "Symbol": "Cu",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/U4SUBSTANCES/SUBSTANCE.YELLOW.2.DDS",
+      "Color": "E4901"
+    },
+    "RED2": {
+      "Name": "Cadmium",
+      "Symbol": "Cd",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/U4SUBSTANCES/SUBSTANCE.RED.2.DDS",
+      "Color": "7A00"
+    },
+    "GREEN2": {
+      "Name": "Emeril",
+      "Symbol": "Em",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/U4SUBSTANCES/SUBSTANCE.GREEN.2.DDS",
+      "Color": "35611B"
+    },
+    "BLUE2": {
+      "Name": "Indium",
+      "Symbol": "In",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/U4SUBSTANCES/SUBSTANCE.BLUE.2.DDS",
+      "Color": "1377D"
+    },
+    "STELLAR2": {
+      "Name": "Chromatic Metal",
+      "Symbol": "Ch",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/U4SUBSTANCES/SUBSTANCE.STELLAR.2.DDS",
+      "Color": "2500"
+    },
+    "TECHFRAG": {
+      "Name": "Nanite Cluster",
+      "Symbol": "∞",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/SUBSTANCES/NANITE.DDS",
+      "Color": "1E344E"
+    },
+    "LUSH1": {
+      "Name": "Paraffinium",
+      "Symbol": "Pf",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/U4SUBSTANCES/SUBSTANCE.BIOME.LUSH.DDS",
+      "Color": "4E404E"
+    },
+    "DUSTY1": {
+      "Name": "Pyrite",
+      "Symbol": "Py",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/U4SUBSTANCES/SUBSTANCE.BIOME.DUSTY.DDS",
+      "Color": "E4702"
+    },
+    "TOXIC1": {
+      "Name": "Ammonia",
+      "Symbol": "NH3",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/U4SUBSTANCES/SUBSTANCE.BIOME.TOXIC.DDS",
+      "Color": "0A64D"
+    },
+    "RADIO1": {
+      "Name": "Uranium",
+      "Symbol": "U",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/U4SUBSTANCES/SUBSTANCE.BIOME.RADIO.DDS",
+      "Color": "FFAD0"
+    },
+    "COLD1": {
+      "Name": "Dioxite",
+      "Symbol": "CO2",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/U4SUBSTANCES/SUBSTANCE.BIOME.COLD.DDS",
+      "Color": "1E4ED0"
+    },
+    "HOT1": {
+      "Name": "Phosphorus",
+      "Symbol": "P",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/U4SUBSTANCES/SUBSTANCE.BIOME.HOT.DDS",
+      "Color": "DA240"
+    },
+    "CREATURE1": {
+      "Name": "Mordite",
+      "Symbol": "Mo",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/U4SUBSTANCES/SUBSTANCE.CREATURE.1.DDS",
+      "Color": "512741"
+    },
+    "ROBOT1": {
+      "Name": "Pugneum",
+      "Symbol": "Pg",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/U4SUBSTANCES/SUBSTANCE.ROBOT.1.DDS",
+      "Color": "4D2857"
+    },
+    "ASTEROID1": {
+      "Name": "Silver",
+      "Symbol": "Ag",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/U4SUBSTANCES/SUBSTANCE.ASTEROID.1.DDS",
+      "Color": "8A7E71"
+    },
+    "ASTEROID2": {
+      "Name": "Gold",
+      "Symbol": "Au",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/U4SUBSTANCES/SUBSTANCE.ASTEROID.2.DDS",
+      "Color": "AA6E5"
+    },
+    "ASTEROID3": {
+      "Name": "Platinum",
+      "Symbol": "Pt",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/U4SUBSTANCES/SUBSTANCE.ASTEROID.3.DDS",
+      "Color": "507474"
+    },
+    "GAS1": {
+      "Name": "Sulphurine",
+      "Symbol": "Su",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/UPDATE3/GAS.3.DDS",
+      "Color": "255E3A"
+    },
+    "GAS2": {
+      "Name": "Radon",
+      "Symbol": "Rn",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/UPDATE3/GAS.2.DDS",
+      "Color": "4B3780"
+    },
+    "GAS3": {
+      "Name": "Nitrogen",
+      "Symbol": "N",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/UPDATE3/GAS.1.DDS",
+      "Color": "DD911E"
+    },
+    "EX_YELLOW": {
+      "Name": "Activated Copper",
+      "Symbol": "Cu",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/U4SUBSTANCES/SUBSTANCE.EXYELLOW.2.DDS",
+      "Color": "E4901"
+    },
+    "EX_RED": {
+      "Name": "Activated Cadmium",
+      "Symbol": "Cd",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/U4SUBSTANCES/SUBSTANCE.EXRED.2.DDS",
+      "Color": "7A00"
+    },
+    "EX_GREEN": {
+      "Name": "Activated Emeril",
+      "Symbol": "Em",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/U4SUBSTANCES/SUBSTANCE.EXGREEN.2.DDS",
+      "Color": "35611B"
+    },
+    "EX_BLUE": {
+      "Name": "Activated Indium",
+      "Symbol": "In",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/U4SUBSTANCES/SUBSTANCE.EXBLUE.2.DDS",
+      "Color": "1377D"
+    },
+    "PLANT_TOXIC": {
+      "Name": "Fungal Mold",
+      "Symbol": "Ml",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/U4SUBSTANCES/SUBSTANCE.PLANT.TOXIC.DDS",
+      "Color": "0A64D"
+    },
+    "PLANT_SNOW": {
+      "Name": "Frost Crystal",
+      "Symbol": "Fc",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/U4SUBSTANCES/SUBSTANCE.PLANT.SNOW.DDS",
+      "Color": "1E4ED0"
+    },
+    "PLANT_RADIO": {
+      "Name": "Gamma Root",
+      "Symbol": "Gr",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/U4SUBSTANCES/SUBSTANCE.PLANT.RADIO.DDS",
+      "Color": "C4871D"
+    },
+    "PLANT_DUST": {
+      "Name": "Cactus Flesh",
+      "Symbol": "Cc",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/U4SUBSTANCES/SUBSTANCE.PLANT.DUSTY.DDS",
+      "Color": "229625"
+    },
+    "PLANT_HOT": {
+      "Name": "Solanium",
+      "Symbol": "So",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/U4SUBSTANCES/SUBSTANCE.PLANT.HOT.DDS",
+      "Color": "B94318"
+    },
+    "PLANT_LUSH": {
+      "Name": "Star Bulb",
+      "Symbol": "Sb",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/U4SUBSTANCES/SUBSTANCE.PLANT.LUSH.DDS",
+      "Color": "208DAB"
+    },
+    "PLANT_CAVE": {
+      "Name": "Marrow Bulb",
+      "Symbol": "Bu",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/U4SUBSTANCES/SUBSTANCE.PLANT.CAVE.DDS",
+      "Color": "5B6E34"
+    },
+    "PLANT_WATER": {
+      "Name": "Kelp Sac",
+      "Symbol": "Ke",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/U4SUBSTANCES/SUBSTANCE.PLANT.WATER.DDS",
+      "Color": "05B83"
+    },
+    "PLANT_POOP": {
+      "Name": "Coprite",
+      "Symbol": "Cr",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/U4SUBSTANCES/SUBSTANCE.PLANT.POOP.DDS",
+      "Color": "78502E"
+    },
+    "SPACEGUNK1": {
+      "Name": "Residual Goop",
+      "Symbol": "Jn",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/UPDATE3/SPACEGUNK.1.DDS",
+      "Color": "5B6E34"
+    },
+    "SPACEGUNK2": {
+      "Name": "Runaway Mold",
+      "Symbol": "Jn",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/UPDATE3/SPACEGUNK.2.DDS",
+      "Color": "5B6E34"
+    },
+    "SPACEGUNK3": {
+      "Name": "Rusted Metal",
+      "Symbol": "Jn",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/UPDATE3/SPACEGUNK.3.DDS",
+      "Color": "5B6E34"
+    },
+    "SPACEGUNK4": {
+      "Name": "Living Slime",
+      "Symbol": "Jn",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/UPDATE3/SPACEGUNK.4.DDS",
+      "Color": "5B6E34"
+    },
+    "SPACEGUNK5": {
+      "Name": "Viscous Fluids",
+      "Symbol": "Jn",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/UPDATE3/SPACEGUNK.5.DDS",
+      "Color": "5B6E34"
+    },
+    "PRODFUEL2": {
+      "Name": "Life Support Gel",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/U4PRODUCTS/PRODUCT.OXYGENGEL2.DDS",
+      "Color": "C01745"
+    },
+    "POWERCELL": {
+      "Name": "Ion Battery",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/U4PRODUCTS/PRODUCT.POWERCELL.DDS",
+      "Color": "F3A922"
+    },
+    "POWERCELL2": {
+      "Name": "Advanced Ion Battery",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/U4PRODUCTS/PRODUCT.POWERCELL2.DDS",
+      "Color": "F3A922"
+    },
+    "JELLY": {
+      "Name": "Di-hydrogen Jelly",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/U4PRODUCTS/PRODUCT.JELLY.DDS",
+      "Color": "C01745"
+    },
+    "LAUNCHFUEL": {
+      "Name": "Starship Launch Fuel",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/U4PRODUCTS/PRODUCT.LAUNCHFUEL.DDS",
+      "Color": "C01745"
+    },
+    "GRENFUEL1": {
+      "Name": "Unstable Plasma",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/PRODUCTS/PRODUCT.PLASMA1.DDS",
+      "Color": "C01745"
+    },
+    "HYPERFUEL1": {
+      "Name": "Warp Cell",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/PRODUCTS/PRODUCT.WARPCELL.DDS",
+      "Color": "C01745"
+    },
+    "FUELPROD3": {
+      "Name": "Carbon Crystal",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/U4PRODUCTS/PRODUCT.FUELPROD.DDS",
+      "Color": "BA3730"
+    },
+    "LANDPROD3": {
+      "Name": "Rare Metal Element",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/U4PRODUCTS/PRODUCT.LANDPROD.DDS",
+      "Color": "8A7E71"
+    },
+    "CAVEPROD3": {
+      "Name": "TetraCobalt",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/U4PRODUCTS/PRODUCT.CAVEPROD.DDS",
+      "Color": "05B83"
+    },
+    "WATERPROD3": {
+      "Name": "Chloride Lattice",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/U4PRODUCTS/PRODUCT.WATERPROD.DDS",
+      "Color": "1E8A41"
+    },
+    "CATAPROD3": {
+      "Name": "Destablised Sodium",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/U4PRODUCTS/PRODUCT.CATAPROD.DDS",
+      "Color": "F16D14"
+    },
+    "OXYPROD3": {
+      "Name": "Superoxide Crystal",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/U4PRODUCTS/PRODUCT.OXYPROD.DDS",
+      "Color": "BA3730"
+    },
+    "ALLOY1": {
+      "Name": "Aronium",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/PRODUCTS/PRODUCT.METALLIC.1.DDS",
+      "Color": "F3A922"
+    },
+    "ALLOY2": {
+      "Name": "Dirty Bronze",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/PRODUCTS/PRODUCT.METALLIC.2.DDS",
+      "Color": "F3A922"
+    },
+    "ALLOY3": {
+      "Name": "Herox",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/PRODUCTS/PRODUCT.METALLIC.3.DDS",
+      "Color": "F3A922"
+    },
+    "ALLOY4": {
+      "Name": "Lemmium",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/PRODUCTS/PRODUCT.METALLIC.4.DDS",
+      "Color": "F3A922"
+    },
+    "ALLOY5": {
+      "Name": "Magno-Gold",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/PRODUCTS/PRODUCT.METALLIC.5.DDS",
+      "Color": "F3A922"
+    },
+    "ALLOY6": {
+      "Name": "Grantine",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/PRODUCTS/PRODUCT.METALLIC.6.DDS",
+      "Color": "F3A922"
+    },
+    "ALLOY7": {
+      "Name": "Geodesite",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/PRODUCTS/PRODUCT.METALLIC.7.DDS",
+      "Color": "F3A922"
+    },
+    "ALLOY8": {
+      "Name": "Iridesite",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/PRODUCTS/PRODUCT.METALLIC.8.DDS",
+      "Color": "F3A922"
+    },
+    "FARMPROD3": {
+      "Name": "Glass",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/UPDATE3/FARMPROD.3.DDS",
+      "Color": "F3A922"
+    },
+    "REACTION1": {
+      "Name": "Thermic Condensate",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/UPDATE3/REACTION.1.DDS",
+      "Color": "F3A922"
+    },
+    "REACTION2": {
+      "Name": "Enriched Carbon",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/UPDATE3/REACTION.2.DDS",
+      "Color": "F3A922"
+    },
+    "REACTION3": {
+      "Name": "Nitrogen Salt",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/UPDATE3/REACTION.3.DDS",
+      "Color": "F3A922"
+    }
+  },
+  "recipes": {
+    "FARMPROD3": [
+      {
+        "Name": "Requested Operation: Extreme Polishing",
+        "Time": "60",
+        "OutQty": "1",
+        "InId": [
+          "ASTEROID1"
+        ],
+        "InQty": [
+          "100"
+        ]
+      }
+    ],
+    "DUSTY1": [
+      {
+        "Name": "Requested Operation: Metal Restructuring",
+        "Time": "60",
+        "OutQty": "1",
+        "InId": [
+          "ASTEROID2"
+        ],
+        "InQty": [
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Mineral Alchemy",
+        "Time": "90",
+        "OutQty": "2",
+        "InId": [
+          "ASTEROID2",
+          "OXYGEN"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Environmental Element Transfer",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "RADIO1",
+          "LAND1"
+        ],
+        "InQty": [
+          "2",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Environmental Element Transfer",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "RADIO1",
+          "LAND2"
+        ],
+        "InQty": [
+          "2",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Floral Titration",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "PLANT_DUST",
+          "WATER1"
+        ],
+        "InQty": [
+          "2",
+          "1"
+        ]
+      }
+    ],
+    "TECHFRAG": [
+      {
+        "Name": "Requested Operation: Reality Warping",
+        "Time": "60",
+        "OutQty": "1",
+        "InId": [
+          "ASTEROID3"
+        ],
+        "InQty": [
+          "5"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Recycle Waste Materials",
+        "Time": "150",
+        "OutQty": "1",
+        "InId": [
+          "SPACEGUNK2"
+        ],
+        "InQty": [
+          "5"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Transmutation",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "ASTEROID1",
+          "ASTEROID2",
+          "ASTEROID3"
+        ],
+        "InQty": [
+          "250",
+          "250",
+          "250"
+        ]
+      }
+    ],
+    "PLANT_POOP": [
+      {
+        "Name": "Requested Operation: Assisted Decomposition",
+        "Time": "60",
+        "OutQty": "1",
+        "InId": [
+          "CREATURE1"
+        ],
+        "InQty": [
+          "3"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Assisted Decomposition",
+        "Time": "20",
+        "OutQty": "1",
+        "InId": [
+          "LAUNCHSUB",
+          "FUEL1"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Runaway Decomposition",
+        "Time": "90",
+        "OutQty": "3",
+        "InId": [
+          "FUEL1",
+          "CREATURE1"
+        ],
+        "InQty": [
+          "2",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Runaway Decomposition",
+        "Time": "90",
+        "OutQty": "4",
+        "InId": [
+          "FUEL2",
+          "CREATURE1"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Oxygenate Microbes",
+        "Time": "90",
+        "OutQty": "3",
+        "InId": [
+          "PLANT_POOP",
+          "OXYGEN"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Encourage Growth",
+        "Time": "60",
+        "OutQty": "1",
+        "InId": [
+          "GAS1",
+          "GAS3"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      }
+    ],
+    "FUEL1": [
+      {
+        "Name": "Requested Operation: Inefficient Burn",
+        "Time": "20",
+        "OutQty": "1",
+        "InId": [
+          "OXYGEN"
+        ],
+        "InQty": [
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Release Carbon",
+        "Time": "30",
+        "OutQty": "2",
+        "InId": [
+          "FUEL2"
+        ],
+        "InQty": [
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Burn Plantlife",
+        "Time": "30",
+        "OutQty": "2",
+        "InId": [
+          "PLANT_TOXIC"
+        ],
+        "InQty": [
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Burn Plantlife",
+        "Time": "30",
+        "OutQty": "2",
+        "InId": [
+          "PLANT_SNOW"
+        ],
+        "InQty": [
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Burn Plantlife",
+        "Time": "30",
+        "OutQty": "2",
+        "InId": [
+          "PLANT_RADIO"
+        ],
+        "InQty": [
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Burn Plantlife",
+        "Time": "30",
+        "OutQty": "2",
+        "InId": [
+          "PLANT_DUST"
+        ],
+        "InQty": [
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Burn Plantlife",
+        "Time": "30",
+        "OutQty": "2",
+        "InId": [
+          "PLANT_HOT"
+        ],
+        "InQty": [
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Burn Plantlife",
+        "Time": "30",
+        "OutQty": "2",
+        "InId": [
+          "PLANT_LUSH"
+        ],
+        "InQty": [
+          "1"
+        ]
+      }
+    ],
+    "JELLY": [
+      {
+        "Name": "Requested Operation: Condense Di-hydrogen",
+        "Time": "120",
+        "OutQty": "1",
+        "InId": [
+          "LAUNCHSUB"
+        ],
+        "InQty": [
+          "30"
+        ]
+      }
+    ],
+    "FUEL2": [
+      {
+        "Name": "Requested Operation: Carbon Melting",
+        "Time": "200",
+        "OutQty": "150",
+        "InId": [
+          "FUELPROD3"
+        ],
+        "InQty": [
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Condense Carbon",
+        "Time": "45",
+        "OutQty": "1",
+        "InId": [
+          "FUEL1"
+        ],
+        "InQty": [
+          "2"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Harness Energy",
+        "Time": "10",
+        "OutQty": "2",
+        "InId": [
+          "RADIO1",
+          "LAUNCHSUB"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Oxygenate Carbon",
+        "Time": "90",
+        "OutQty": "5",
+        "InId": [
+          "FUEL1",
+          "OXYGEN"
+        ],
+        "InQty": [
+          "2",
+          "2"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Oxygenate Carbon",
+        "Time": "90",
+        "OutQty": "6",
+        "InId": [
+          "FUEL2",
+          "OXYGEN"
+        ],
+        "InQty": [
+          "1",
+          "2"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Feed Microbes",
+        "Time": "90",
+        "OutQty": "2",
+        "InId": [
+          "PLANT_POOP",
+          "FUEL1"
+        ],
+        "InQty": [
+          "1",
+          "2"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Feed Microbes",
+        "Time": "90",
+        "OutQty": "3",
+        "InId": [
+          "PLANT_POOP",
+          "FUEL2"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Feed Microbes",
+        "Time": "90",
+        "OutQty": "2",
+        "InId": [
+          "PLANT_POOP",
+          "CREATURE1"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      }
+    ],
+    "LAND2": [
+      {
+        "Name": "Requested Operation: Rare Metal Detoxification",
+        "Time": "200",
+        "OutQty": "150",
+        "InId": [
+          "LANDPROD3"
+        ],
+        "InQty": [
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Extract Metallic Elements",
+        "Time": "30",
+        "OutQty": "1",
+        "InId": [
+          "LAND1"
+        ],
+        "InQty": [
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Demagnetise Metal",
+        "Time": "40",
+        "OutQty": "2",
+        "InId": [
+          "LAND3"
+        ],
+        "InQty": [
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Matter Expansion",
+        "Time": "90",
+        "OutQty": "3",
+        "InId": [
+          "LAND1",
+          "ROBOT1"
+        ],
+        "InQty": [
+          "2",
+          "1"
+        ]
+      }
+    ],
+    "CAVE2": [
+      {
+        "Name": "Requested Operation: Cobalt Cracking",
+        "Time": "200",
+        "OutQty": "150",
+        "InId": [
+          "CAVEPROD3"
+        ],
+        "InQty": [
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Ionise Mineral",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "CAVE1"
+        ],
+        "InQty": [
+          "2"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Efficient Cobalt Ionisation",
+        "Time": "90",
+        "OutQty": "5",
+        "InId": [
+          "CAVE1",
+          "OXYGEN"
+        ],
+        "InQty": [
+          "2",
+          "2"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Efficient Cobalt Ionisation",
+        "Time": "90",
+        "OutQty": "6",
+        "InId": [
+          "CAVE2",
+          "OXYGEN"
+        ],
+        "InQty": [
+          "1",
+          "2"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Bonded Cobalt Extraction",
+        "Time": "90",
+        "OutQty": "2",
+        "InId": [
+          "PLANT_CAVE",
+          "OXYGEN"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Pugneum Washing",
+        "Time": "90",
+        "OutQty": "2",
+        "InId": [
+          "PLANT_CAVE",
+          "ROBOT1"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Ionise Bulbs",
+        "Time": "90",
+        "OutQty": "2",
+        "InId": [
+          "PLANT_CAVE",
+          "CAVE1"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Ionise Bulbs",
+        "Time": "90",
+        "OutQty": "2",
+        "InId": [
+          "PLANT_CAVE",
+          "CAVE2"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      }
+    ],
+    "WATER2": [
+      {
+        "Name": "Requested Operation: Chloride De-latticing",
+        "Time": "200",
+        "OutQty": "150",
+        "InId": [
+          "WATERPROD3"
+        ],
+        "InQty": [
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Concentrate Salt",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "WATER1"
+        ],
+        "InQty": [
+          "2"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Efficient Salt Evaporation",
+        "Time": "90",
+        "OutQty": "5",
+        "InId": [
+          "WATER1",
+          "OXYGEN"
+        ],
+        "InQty": [
+          "2",
+          "2"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Chlorine Expansion",
+        "Time": "90",
+        "OutQty": "6",
+        "InId": [
+          "WATER2",
+          "OXYGEN"
+        ],
+        "InQty": [
+          "1",
+          "2"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Bonded Chlorine Extraction",
+        "Time": "90",
+        "OutQty": "2",
+        "InId": [
+          "PLANT_WATER",
+          "OXYGEN"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Pugneum Washing",
+        "Time": "90",
+        "OutQty": "2",
+        "InId": [
+          "PLANT_WATER",
+          "ROBOT1"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Dissolve Natural Salts",
+        "Time": "90",
+        "OutQty": "2",
+        "InId": [
+          "PLANT_WATER",
+          "WATER1"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Dissolve Natural Salts",
+        "Time": "90",
+        "OutQty": "2",
+        "InId": [
+          "PLANT_WATER",
+          "WATER2"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      }
+    ],
+    "CATALYST2": [
+      {
+        "Name": "Requested Operation: Sodium Stabilisation",
+        "Time": "200",
+        "OutQty": "150",
+        "InId": [
+          "CATAPROD3"
+        ],
+        "InQty": [
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Process Sodium",
+        "Time": "100",
+        "OutQty": "1",
+        "InId": [
+          "CATALYST1"
+        ],
+        "InQty": [
+          "2"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Oxygenate Sodium",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "CATALYST1",
+          "OXYGEN"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Oxygenate Sodium",
+        "Time": "90",
+        "OutQty": "2",
+        "InId": [
+          "CATALYST2",
+          "OXYGEN"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Catalyse Carbon",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "FUEL1",
+          "CATALYST1"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Catalyse Carbon",
+        "Time": "90",
+        "OutQty": "2",
+        "InId": [
+          "FUEL2",
+          "CATALYST1"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Sentinel Catalysation",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "CATALYST1",
+          "ROBOT1"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Sentinel Catalysation",
+        "Time": "90",
+        "OutQty": "3",
+        "InId": [
+          "CATALYST2",
+          "ROBOT1"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Gas Catalysation",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "GAS3",
+          "CATALYST1"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Gas Catalysation",
+        "Time": "90",
+        "OutQty": "2",
+        "InId": [
+          "GAS3",
+          "CATALYST2"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Harness Organic Nitrogren",
+        "Time": "90",
+        "OutQty": "2",
+        "InId": [
+          "PLANT_CAVE",
+          "CATALYST1"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Harness Organic Nitrogren",
+        "Time": "90",
+        "OutQty": "2",
+        "InId": [
+          "PLANT_WATER",
+          "CATALYST1"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Feed Microbes",
+        "Time": "90",
+        "OutQty": "2",
+        "InId": [
+          "PLANT_POOP",
+          "CATALYST1"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Harness Organic Nitrogren",
+        "Time": "90",
+        "OutQty": "2",
+        "InId": [
+          "PLANT_CAVE",
+          "CATALYST2"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Harness Organic Nitrogren",
+        "Time": "90",
+        "OutQty": "2",
+        "InId": [
+          "PLANT_WATER",
+          "CATALYST2"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Feed Microbes",
+        "Time": "90",
+        "OutQty": "2",
+        "InId": [
+          "PLANT_POOP",
+          "CATALYST2"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Gas Catalysation",
+        "Time": "120",
+        "OutQty": "1",
+        "InId": [
+          "GAS3",
+          "LAND1"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Gas Catalysation",
+        "Time": "120",
+        "OutQty": "2",
+        "InId": [
+          "GAS3",
+          "LAND2"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Gas Catalysation",
+        "Time": "120",
+        "OutQty": "3",
+        "InId": [
+          "GAS3",
+          "LAND3"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      }
+    ],
+    "OXYGEN": [
+      {
+        "Name": "Requested Operation: Oxygen Decompression",
+        "Time": "200",
+        "OutQty": "150",
+        "InId": [
+          "OXYPROD3"
+        ],
+        "InQty": [
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Extract Micro-Bubbles",
+        "Time": "60",
+        "OutQty": "1",
+        "InId": [
+          "PLANT_WATER"
+        ],
+        "InQty": [
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Release Captured Oxygen",
+        "Time": "90",
+        "OutQty": "2",
+        "InId": [
+          "PLANT_WATER",
+          "FUEL1"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Release Captured Oxygen",
+        "Time": "90",
+        "OutQty": "2",
+        "InId": [
+          "PLANT_WATER",
+          "FUEL2"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Artificial Photosynthesis",
+        "Time": "900",
+        "OutQty": "10",
+        "InId": [
+          "PLANT_TOXIC",
+          "PLANT_WATER",
+          "FUEL2"
+        ],
+        "InQty": [
+          "1",
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Artificial Photosynthesis",
+        "Time": "900",
+        "OutQty": "10",
+        "InId": [
+          "PLANT_SNOW",
+          "PLANT_WATER",
+          "FUEL2"
+        ],
+        "InQty": [
+          "1",
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Artificial Photosynthesis",
+        "Time": "900",
+        "OutQty": "10",
+        "InId": [
+          "PLANT_DUST",
+          "PLANT_WATER",
+          "FUEL2"
+        ],
+        "InQty": [
+          "1",
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Artificial Photosynthesis",
+        "Time": "900",
+        "OutQty": "10",
+        "InId": [
+          "PLANT_HOT",
+          "PLANT_WATER",
+          "FUEL2"
+        ],
+        "InQty": [
+          "1",
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Artificial Photosynthesis",
+        "Time": "900",
+        "OutQty": "10",
+        "InId": [
+          "PLANT_RADIO",
+          "PLANT_WATER",
+          "FUEL2"
+        ],
+        "InQty": [
+          "1",
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Artificial Photosynthesis",
+        "Time": "900",
+        "OutQty": "10",
+        "InId": [
+          "PLANT_LUSH",
+          "PLANT_WATER",
+          "FUEL2"
+        ],
+        "InQty": [
+          "1",
+          "1",
+          "1"
+        ]
+      }
+    ],
+    "LAUNCHSUB": [
+      {
+        "Name": "Requested Operation: Di-hydrogen Cycling",
+        "Time": "100",
+        "OutQty": "50",
+        "InId": [
+          "JELLY"
+        ],
+        "InQty": [
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Tritium Cycling",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "ROCKETSUB"
+        ],
+        "InQty": [
+          "5"
+        ]
+      }
+    ],
+    "CAVE1": [
+      {
+        "Name": "Requested Operation: Deionise Mineral",
+        "Time": "30",
+        "OutQty": "2",
+        "InId": [
+          "CAVE2"
+        ],
+        "InQty": [
+          "1"
+        ]
+      }
+    ],
+    "CATALYST1": [
+      {
+        "Name": "Requested Operation: Free Sodium",
+        "Time": "60",
+        "OutQty": "2",
+        "InId": [
+          "CATALYST2"
+        ],
+        "InQty": [
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Extract Organic Sodium",
+        "Time": "60",
+        "OutQty": "1",
+        "InId": [
+          "PLANT_CAVE"
+        ],
+        "InQty": [
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Extract Organic Sodium",
+        "Time": "90",
+        "OutQty": "2",
+        "InId": [
+          "PLANT_CAVE",
+          "FUEL1"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Extract Organic Sodium",
+        "Time": "90",
+        "OutQty": "2",
+        "InId": [
+          "PLANT_CAVE",
+          "FUEL2"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      }
+    ],
+    "LAND3": [
+      {
+        "Name": "Requested Operation: Magnetise Metal",
+        "Time": "60",
+        "OutQty": "1",
+        "InId": [
+          "LAND2"
+        ],
+        "InQty": [
+          "2"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Carbonise Metal",
+        "Time": "60",
+        "OutQty": "1",
+        "InId": [
+          "LAND1",
+          "FUEL1"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Carbonise Metal",
+        "Time": "60",
+        "OutQty": "2",
+        "InId": [
+          "LAND1",
+          "FUEL2"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Carbonise Metal",
+        "Time": "60",
+        "OutQty": "2",
+        "InId": [
+          "LAND2",
+          "FUEL1"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Carbonise Metal",
+        "Time": "60",
+        "OutQty": "3",
+        "InId": [
+          "LAND2",
+          "FUEL2"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Matter Expansion",
+        "Time": "90",
+        "OutQty": "3",
+        "InId": [
+          "LAND2",
+          "ROBOT1"
+        ],
+        "InQty": [
+          "2",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Matter Expansion",
+        "Time": "90",
+        "OutQty": "4",
+        "InId": [
+          "LAND3",
+          "ROBOT1"
+        ],
+        "InQty": [
+          "3",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Mineral Alchemy",
+        "Time": "90",
+        "OutQty": "10",
+        "InId": [
+          "ASTEROID3",
+          "OXYGEN"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Stellar / Metal Fusion",
+        "Time": "90",
+        "OutQty": "4",
+        "InId": [
+          "BLUE2",
+          "LAND1"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Stellar / Metal Fusion",
+        "Time": "90",
+        "OutQty": "2",
+        "InId": [
+          "RED2",
+          "LAND1"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Stellar / Metal Fusion",
+        "Time": "90",
+        "OutQty": "3",
+        "InId": [
+          "GREEN2",
+          "LAND1"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Stellar / Metal Fusion",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "YELLOW2",
+          "LAND1"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Stellar / Metal Fusion",
+        "Time": "90",
+        "OutQty": "4",
+        "InId": [
+          "EX_RED",
+          "LAND1"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Stellar / Metal Fusion",
+        "Time": "90",
+        "OutQty": "8",
+        "InId": [
+          "EX_BLUE",
+          "LAND1"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Stellar / Metal Fusion",
+        "Time": "90",
+        "OutQty": "6",
+        "InId": [
+          "EX_GREEN",
+          "LAND1"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Stellar / Metal Fusion",
+        "Time": "90",
+        "OutQty": "2",
+        "InId": [
+          "EX_YELLOW",
+          "LAND1"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Deep Metal Compression",
+        "Time": "120",
+        "OutQty": "5",
+        "InId": [
+          "LAND1",
+          "LAND2",
+          "ASTEROID1"
+        ],
+        "InQty": [
+          "1",
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Deep Metal Compression",
+        "Time": "120",
+        "OutQty": "8",
+        "InId": [
+          "LAND1",
+          "LAND2",
+          "ASTEROID2"
+        ],
+        "InQty": [
+          "1",
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Deep Metal Compression",
+        "Time": "120",
+        "OutQty": "12",
+        "InId": [
+          "LAND1",
+          "LAND2",
+          "ASTEROID3"
+        ],
+        "InQty": [
+          "1",
+          "1",
+          "1"
+        ]
+      }
+    ],
+    "STELLAR2": [
+      {
+        "Name": "Requested Operation: Extract Chromatic Material",
+        "Time": "70",
+        "OutQty": "1",
+        "InId": [
+          "RED2"
+        ],
+        "InQty": [
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Extract Chromatic Material",
+        "Time": "25",
+        "OutQty": "4",
+        "InId": [
+          "BLUE2"
+        ],
+        "InQty": [
+          "2"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Extract Chromatic Material",
+        "Time": "40",
+        "OutQty": "3",
+        "InId": [
+          "GREEN2"
+        ],
+        "InQty": [
+          "2"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Extract Chromatic Material",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "YELLOW2"
+        ],
+        "InQty": [
+          "2"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Extract Chromatic Material",
+        "Time": "50",
+        "OutQty": "2",
+        "InId": [
+          "EX_RED"
+        ],
+        "InQty": [
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Extract Chromatic Material",
+        "Time": "30",
+        "OutQty": "4",
+        "InId": [
+          "EX_BLUE"
+        ],
+        "InQty": [
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Extract Chromatic Material",
+        "Time": "40",
+        "OutQty": "3",
+        "InId": [
+          "EX_GREEN"
+        ],
+        "InQty": [
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Extract Chromatic Material",
+        "Time": "60",
+        "OutQty": "1",
+        "InId": [
+          "EX_YELLOW"
+        ],
+        "InQty": [
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Chromatic Metal Fusion",
+        "Time": "90",
+        "OutQty": "2",
+        "InId": [
+          "RED2",
+          "LAND2"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Chromatic Metal Fusion",
+        "Time": "90",
+        "OutQty": "3",
+        "InId": [
+          "GREEN2",
+          "LAND2"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Chromatic Metal Fusion",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "YELLOW2",
+          "LAND2"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Chromatic Metal Fusion",
+        "Time": "90",
+        "OutQty": "4",
+        "InId": [
+          "BLUE2",
+          "LAND2"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Chromatic Metal Fusion",
+        "Time": "90",
+        "OutQty": "4",
+        "InId": [
+          "EX_RED",
+          "LAND2"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Chromatic Metal Fusion",
+        "Time": "90",
+        "OutQty": "8",
+        "InId": [
+          "EX_BLUE",
+          "LAND2"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Chromatic Metal Fusion",
+        "Time": "90",
+        "OutQty": "6",
+        "InId": [
+          "EX_GREEN",
+          "LAND2"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Chromatic Metal Fusion",
+        "Time": "90",
+        "OutQty": "2",
+        "InId": [
+          "EX_YELLOW",
+          "LAND2"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      }
+    ],
+    "LAND1": [
+      {
+        "Name": "Requested Operation: Ferrite Dust Extraction",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "LUSH1"
+        ],
+        "InQty": [
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Ferrite Dust Extraction",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "DUSTY1"
+        ],
+        "InQty": [
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Ferrite Dust Extraction",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "TOXIC1"
+        ],
+        "InQty": [
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Ferrite Dust Extraction",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "RADIO1"
+        ],
+        "InQty": [
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Ferrite Dust Extraction",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "COLD1"
+        ],
+        "InQty": [
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Ferrite Dust Extraction",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "HOT1"
+        ],
+        "InQty": [
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Recycle Waste Materials",
+        "Time": "150",
+        "OutQty": "1",
+        "InId": [
+          "SPACEGUNK3"
+        ],
+        "InQty": [
+          "5"
+        ]
+      }
+    ],
+    "WATER1": [
+      {
+        "Name": "Requested Operation: Salt Production",
+        "Time": "60",
+        "OutQty": "2",
+        "InId": [
+          "WATER2"
+        ],
+        "InQty": [
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Rapid Formation / Evaporation",
+        "Time": "20",
+        "OutQty": "1",
+        "InId": [
+          "LAUNCHSUB",
+          "OXYGEN"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      }
+    ],
+    "GAS2": [
+      {
+        "Name": "Requested Operation: Gas Transfer",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "GAS1"
+        ],
+        "InQty": [
+          "3"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Gas Transfer",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "GAS1",
+          "OXYGEN"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Gas Catalysation",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "GAS1",
+          "STELLAR2"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      }
+    ],
+    "GAS3": [
+      {
+        "Name": "Requested Operation: Gas Transfer",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "GAS2"
+        ],
+        "InQty": [
+          "3"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Gas Transfer",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "GAS2",
+          "OXYGEN"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Gas Catalysation",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "GAS2",
+          "STELLAR2"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      }
+    ],
+    "GAS1": [
+      {
+        "Name": "Requested Operation: Gas Transfer",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "GAS3"
+        ],
+        "InQty": [
+          "3"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Gas Transfer",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "GAS3",
+          "OXYGEN"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Gas Catalysation",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "GAS3",
+          "STELLAR2"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      }
+    ],
+    "SPACEGUNK5": [
+      {
+        "Name": "Requested Operation: Recycle Waste Materials",
+        "Time": "150",
+        "OutQty": "1",
+        "InId": [
+          "SPACEGUNK1"
+        ],
+        "InQty": [
+          "1"
+        ]
+      }
+    ],
+    "SPACEGUNK2": [
+      {
+        "Name": "Requested Operation: Recycle Waste Materials",
+        "Time": "150",
+        "OutQty": "1",
+        "InId": [
+          "SPACEGUNK4"
+        ],
+        "InQty": [
+          "1"
+        ]
+      }
+    ],
+    "SPACEGUNK4": [
+      {
+        "Name": "Requested Operation: Recycle Waste Materials",
+        "Time": "150",
+        "OutQty": "1",
+        "InId": [
+          "SPACEGUNK5"
+        ],
+        "InQty": [
+          "1"
+        ]
+      }
+    ],
+    "CREATURE1": [
+      {
+        "Name": "Requested Operation: Organic Reassembly",
+        "Time": "180",
+        "OutQty": "2",
+        "InId": [
+          "PLANT_POOP"
+        ],
+        "InQty": [
+          "3"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Organic Reassembly",
+        "Time": "20",
+        "OutQty": "1",
+        "InId": [
+          "LAUNCHSUB",
+          "FUEL2"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Anomaly / Organic Hybridisation",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "FUEL1",
+          "ROBOT1"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Anomaly / Organic Hybridisation",
+        "Time": "90",
+        "OutQty": "2",
+        "InId": [
+          "FUEL2",
+          "ROBOT1"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      }
+    ],
+    "ASTEROID1": [
+      {
+        "Name": "Requested Operation: Extreme Alloy Separation",
+        "Time": "300",
+        "OutQty": "250",
+        "InId": [
+          "ALLOY1"
+        ],
+        "InQty": [
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Extreme Alloy Separation",
+        "Time": "300",
+        "OutQty": "250",
+        "InId": [
+          "ALLOY2"
+        ],
+        "InQty": [
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Extreme Alloy Separation",
+        "Time": "250",
+        "OutQty": "250",
+        "InId": [
+          "ALLOY3"
+        ],
+        "InQty": [
+          "1"
+        ]
+      }
+    ],
+    "ASTEROID2": [
+      {
+        "Name": "Requested Operation: Extreme Alloy Separation",
+        "Time": "300",
+        "OutQty": "125",
+        "InId": [
+          "ALLOY4"
+        ],
+        "InQty": [
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Extreme Alloy Separation",
+        "Time": "300",
+        "OutQty": "125",
+        "InId": [
+          "ALLOY5"
+        ],
+        "InQty": [
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Extreme Alloy Separation",
+        "Time": "300",
+        "OutQty": "125",
+        "InId": [
+          "ALLOY6"
+        ],
+        "InQty": [
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Alchemical Construction",
+        "Time": "60",
+        "OutQty": "1",
+        "InId": [
+          "PLANT_POOP",
+          "SPACEGUNK1"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Organic / Anomaly Synthesis",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "CREATURE1",
+          "ROBOT1"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Pugneum Alchemy",
+        "Time": "90",
+        "OutQty": "2",
+        "InId": [
+          "PLANT_POOP",
+          "ROBOT1"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Chromatic Alchemy",
+        "Time": "1200",
+        "OutQty": "10",
+        "InId": [
+          "LAND1",
+          "OXYGEN",
+          "GREEN2"
+        ],
+        "InQty": [
+          "1",
+          "1",
+          "1"
+        ]
+      }
+    ],
+    "ASTEROID3": [
+      {
+        "Name": "Requested Operation: Extreme Alloy Separation",
+        "Time": "300",
+        "OutQty": "250",
+        "InId": [
+          "ALLOY7"
+        ],
+        "InQty": [
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Extreme Alloy Separation",
+        "Time": "300",
+        "OutQty": "250",
+        "InId": [
+          "ALLOY8"
+        ],
+        "InQty": [
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Transmutation",
+        "Time": "60",
+        "OutQty": "1",
+        "InId": [
+          "ASTEROID2",
+          "ASTEROID1"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Chromatic Alchemy",
+        "Time": "1200",
+        "OutQty": "10",
+        "InId": [
+          "LAND1",
+          "OXYGEN",
+          "STELLAR2"
+        ],
+        "InQty": [
+          "1",
+          "1",
+          "250"
+        ]
+      }
+    ],
+    "PLANT_HOT": [
+      {
+        "Name": "Requested Operation: Sulphur Injection",
+        "Time": "40",
+        "OutQty": "1",
+        "InId": [
+          "GAS1",
+          "LAUNCHSUB"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Organic Expansion",
+        "Time": "90",
+        "OutQty": "2",
+        "InId": [
+          "HOT1",
+          "PLANT_HOT"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Encourage Growth",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "HOT1",
+          "OXYGEN"
+        ],
+        "InQty": [
+          "2",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Encourage Growth",
+        "Time": "60",
+        "OutQty": "1",
+        "InId": [
+          "HOT1",
+          "GAS1"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      }
+    ],
+    "RADIO1": [
+      {
+        "Name": "Requested Operation: Catalyse Radiation",
+        "Time": "40",
+        "OutQty": "1",
+        "InId": [
+          "GAS2",
+          "LAUNCHSUB"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Environmental Element Transfer",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "HOT1",
+          "LAND1"
+        ],
+        "InQty": [
+          "2",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Environmental Element Transfer",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "HOT1",
+          "LAND2"
+        ],
+        "InQty": [
+          "2",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Floral Titration",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "PLANT_RADIO",
+          "WATER1"
+        ],
+        "InQty": [
+          "2",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Metal Enrichment",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "LAND1",
+          "GAS2"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Metal Enrichment",
+        "Time": "90",
+        "OutQty": "2",
+        "InId": [
+          "GAS2",
+          "LAND2"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Metal Enrichment",
+        "Time": "90",
+        "OutQty": "3",
+        "InId": [
+          "GAS2",
+          "LAND3"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      }
+    ],
+    "TOXIC1": [
+      {
+        "Name": "Requested Operation: Organic Fusion",
+        "Time": "40",
+        "OutQty": "1",
+        "InId": [
+          "GAS3",
+          "LAUNCHSUB"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Environmental Element Transfer",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "LUSH1",
+          "LAND1"
+        ],
+        "InQty": [
+          "2",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Environmental Element Transfer",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "LUSH1",
+          "LAND2"
+        ],
+        "InQty": [
+          "2",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Floral Titration",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "PLANT_TOXIC",
+          "WATER1"
+        ],
+        "InQty": [
+          "2",
+          "1"
+        ]
+      }
+    ],
+    "LAUNCHSUB2": [
+      {
+        "Name": "Requested Operation: Di-hydrogen Cycling",
+        "Time": "60",
+        "OutQty": "1",
+        "InId": [
+          "LAUNCHSUB",
+          "ROCKETSUB"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      }
+    ],
+    "SPACEGUNK3": [
+      {
+        "Name": "Requested Operation: Oxidise Metal",
+        "Time": "100",
+        "OutQty": "2",
+        "InId": [
+          "LAND2",
+          "OXYGEN"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Oxidise Metal",
+        "Time": "100",
+        "OutQty": "1",
+        "InId": [
+          "LAND1",
+          "OXYGEN"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      }
+    ],
+    "COLD1": [
+      {
+        "Name": "Requested Operation: Advanced Carbon Processing",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "FUEL1",
+          "CATALYST2"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Advanced Carbon Processing",
+        "Time": "90",
+        "OutQty": "2",
+        "InId": [
+          "FUEL2",
+          "CATALYST2"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Environmental Element Transfer",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "TOXIC1",
+          "LAND1"
+        ],
+        "InQty": [
+          "2",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Environmental Element Transfer",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "TOXIC1",
+          "LAND2"
+        ],
+        "InQty": [
+          "2",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Floral Titration",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "PLANT_SNOW",
+          "WATER1"
+        ],
+        "InQty": [
+          "2",
+          "1"
+        ]
+      }
+    ],
+    "PLANT_CAVE": [
+      {
+        "Name": "Requested Operation: Fertiliser Synthesis",
+        "Time": "90",
+        "OutQty": "3",
+        "InId": [
+          "CATALYST1",
+          "CREATURE1"
+        ],
+        "InQty": [
+          "2",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Fertiliser Synthesis",
+        "Time": "90",
+        "OutQty": "4",
+        "InId": [
+          "CATALYST2",
+          "CREATURE1"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Encourage Growth",
+        "Time": "60",
+        "OutQty": "1",
+        "InId": [
+          "CAVE1",
+          "GAS3"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      }
+    ],
+    "RED2": [
+      {
+        "Name": "Requested Operation: Chromatic Expansion",
+        "Time": "90",
+        "OutQty": "4",
+        "InId": [
+          "RED2",
+          "STELLAR2"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      }
+    ],
+    "BLUE2": [
+      {
+        "Name": "Requested Operation: Chromatic Expansion",
+        "Time": "90",
+        "OutQty": "4",
+        "InId": [
+          "BLUE2",
+          "STELLAR2"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      }
+    ],
+    "GREEN2": [
+      {
+        "Name": "Requested Operation: Chromatic Expansion",
+        "Time": "90",
+        "OutQty": "4",
+        "InId": [
+          "GREEN2",
+          "STELLAR2"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      }
+    ],
+    "YELLOW2": [
+      {
+        "Name": "Requested Operation: Chromatic Expansion",
+        "Time": "90",
+        "OutQty": "4",
+        "InId": [
+          "YELLOW2",
+          "STELLAR2"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      }
+    ],
+    "PLANT_LUSH": [
+      {
+        "Name": "Requested Operation: Organic Expansion",
+        "Time": "90",
+        "OutQty": "2",
+        "InId": [
+          "LUSH1",
+          "PLANT_LUSH"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Encourage Growth",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "LUSH1",
+          "OXYGEN"
+        ],
+        "InQty": [
+          "2",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Encourage Growth",
+        "Time": "60",
+        "OutQty": "1",
+        "InId": [
+          "LUSH1",
+          "GAS3"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      }
+    ],
+    "PLANT_DUST": [
+      {
+        "Name": "Requested Operation: Organic Expansion",
+        "Time": "90",
+        "OutQty": "2",
+        "InId": [
+          "DUSTY1",
+          "PLANT_DUST"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Encourage Growth",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "DUSTY1",
+          "OXYGEN"
+        ],
+        "InQty": [
+          "2",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Encourage Growth",
+        "Time": "60",
+        "OutQty": "1",
+        "InId": [
+          "DUSTY1",
+          "GAS1"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      }
+    ],
+    "PLANT_TOXIC": [
+      {
+        "Name": "Requested Operation: Organic Expansion",
+        "Time": "90",
+        "OutQty": "2",
+        "InId": [
+          "TOXIC1",
+          "PLANT_TOXIC"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Encourage Growth",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "TOXIC1",
+          "OXYGEN"
+        ],
+        "InQty": [
+          "2",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Encourage Growth",
+        "Time": "60",
+        "OutQty": "1",
+        "InId": [
+          "TOXIC1",
+          "GAS3"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      }
+    ],
+    "PLANT_RADIO": [
+      {
+        "Name": "Requested Operation: Organic Expansion",
+        "Time": "90",
+        "OutQty": "2",
+        "InId": [
+          "RADIO1",
+          "PLANT_RADIO"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Encourage Growth",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "RADIO1",
+          "OXYGEN"
+        ],
+        "InQty": [
+          "2",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Encourage Growth",
+        "Time": "60",
+        "OutQty": "1",
+        "InId": [
+          "RADIO1",
+          "GAS2"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      }
+    ],
+    "PLANT_SNOW": [
+      {
+        "Name": "Requested Operation: Organic Expansion",
+        "Time": "90",
+        "OutQty": "2",
+        "InId": [
+          "COLD1",
+          "PLANT_SNOW"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Encourage Growth",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "COLD1",
+          "OXYGEN"
+        ],
+        "InQty": [
+          "2",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Encourage Growth",
+        "Time": "60",
+        "OutQty": "1",
+        "InId": [
+          "COLD1",
+          "GAS2"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      }
+    ],
+    "LUSH1": [
+      {
+        "Name": "Requested Operation: Mineral Alchemy",
+        "Time": "90",
+        "OutQty": "2",
+        "InId": [
+          "ASTEROID1",
+          "OXYGEN"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Environmental Element Transfer",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "DUSTY1",
+          "LAND1"
+        ],
+        "InQty": [
+          "2",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Environmental Element Transfer",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "DUSTY1",
+          "LAND2"
+        ],
+        "InQty": [
+          "2",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Floral Titration",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "PLANT_LUSH",
+          "WATER1"
+        ],
+        "InQty": [
+          "2",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Loosen Bonds",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "GAS1",
+          "LAND1"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Loosen Bonds",
+        "Time": "90",
+        "OutQty": "2",
+        "InId": [
+          "GAS1",
+          "LAND2"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Loosen Bonds",
+        "Time": "90",
+        "OutQty": "3",
+        "InId": [
+          "GAS1",
+          "LAND3"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      }
+    ],
+    "HOT1": [
+      {
+        "Name": "Requested Operation: Environmental Element Transfer",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "COLD1",
+          "LAND1"
+        ],
+        "InQty": [
+          "2",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Environmental Element Transfer",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "COLD1",
+          "LAND2"
+        ],
+        "InQty": [
+          "2",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Floral Titration",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "PLANT_HOT",
+          "WATER1"
+        ],
+        "InQty": [
+          "2",
+          "1"
+        ]
+      }
+    ],
+    "FUELPROD3": [
+      {
+        "Name": "Requested Operation: Carbon Crystallisation",
+        "Time": "120",
+        "OutQty": "1",
+        "InId": [
+          "FUEL1",
+          "FUEL2"
+        ],
+        "InQty": [
+          "50",
+          "50"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Carbon Crystallisation",
+        "Time": "200",
+        "OutQty": "1",
+        "InId": [
+          "FUEL1",
+          "FUEL2",
+          "ROCKETSUB"
+        ],
+        "InQty": [
+          "40",
+          "40",
+          "50"
+        ]
+      }
+    ],
+    "CATAPROD3": [
+      {
+        "Name": "Requested Operation: Sodium Destabilisation",
+        "Time": "120",
+        "OutQty": "1",
+        "InId": [
+          "CATALYST1",
+          "CATALYST2"
+        ],
+        "InQty": [
+          "50",
+          "50"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Sodium Destabilisation",
+        "Time": "200",
+        "OutQty": "1",
+        "InId": [
+          "CATALYST1",
+          "CATALYST2",
+          "ROCKETSUB"
+        ],
+        "InQty": [
+          "40",
+          "40",
+          "50"
+        ]
+      }
+    ],
+    "WATERPROD3": [
+      {
+        "Name": "Requested Operation: Chlorine Latticing",
+        "Time": "120",
+        "OutQty": "1",
+        "InId": [
+          "WATER1",
+          "WATER2"
+        ],
+        "InQty": [
+          "50",
+          "50"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Chlorine Latticing",
+        "Time": "200",
+        "OutQty": "1",
+        "InId": [
+          "WATER1",
+          "WATER2",
+          "ROCKETSUB"
+        ],
+        "InQty": [
+          "40",
+          "40",
+          "50"
+        ]
+      }
+    ],
+    "CAVEPROD3": [
+      {
+        "Name": "Requested Operation: Cobalt Supercharging",
+        "Time": "120",
+        "OutQty": "1",
+        "InId": [
+          "CAVE1",
+          "CAVE2"
+        ],
+        "InQty": [
+          "50",
+          "50"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Cobalt Supercharging",
+        "Time": "200",
+        "OutQty": "1",
+        "InId": [
+          "CAVE1",
+          "CAVE2",
+          "ROCKETSUB"
+        ],
+        "InQty": [
+          "40",
+          "40",
+          "50"
+        ]
+      }
+    ],
+    "OXYPROD3": [
+      {
+        "Name": "Requested Operation: Oxygen Nucleation",
+        "Time": "200",
+        "OutQty": "1",
+        "InId": [
+          "OXYGEN",
+          "ROCKETSUB"
+        ],
+        "InQty": [
+          "100",
+          "50"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Oxygen Nucleation",
+        "Time": "200",
+        "OutQty": "1",
+        "InId": [
+          "OXYGEN",
+          "RADIO1",
+          "ROCKETSUB"
+        ],
+        "InQty": [
+          "40",
+          "40",
+          "50"
+        ]
+      }
+    ],
+    "LANDPROD3": [
+      {
+        "Name": "Requested Operation: Rare Metal Detoxification",
+        "Time": "120",
+        "OutQty": "1",
+        "InId": [
+          "LAND3",
+          "OXYGEN"
+        ],
+        "InQty": [
+          "25",
+          "50"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Rare Metal Fusion",
+        "Time": "120",
+        "OutQty": "1",
+        "InId": [
+          "LAND1",
+          "LAND2",
+          "LAND3"
+        ],
+        "InQty": [
+          "35",
+          "35",
+          "35"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Rare Metal Fusion",
+        "Time": "200",
+        "OutQty": "1",
+        "InId": [
+          "OXYGEN",
+          "LAND3",
+          "ROCKETSUB"
+        ],
+        "InQty": [
+          "20",
+          "20",
+          "25"
+        ]
+      }
+    ],
+    "PLANT_WATER": [
+      {
+        "Name": "Requested Operation: Encourage Growth",
+        "Time": "60",
+        "OutQty": "1",
+        "InId": [
+          "WATER1",
+          "GAS3"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      }
+    ],
+    "HYPERFUEL1": [
+      {
+        "Name": "Requested Operation: Antimatter Bypass",
+        "Time": "600",
+        "OutQty": "1",
+        "InId": [
+          "FUEL2",
+          "CATALYST1",
+          "STELLAR2"
+        ],
+        "InQty": [
+          "25",
+          "10",
+          "250"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Antimatter Bypass",
+        "Time": "600",
+        "OutQty": "1",
+        "InId": [
+          "FUEL1",
+          "CATALYST2",
+          "STELLAR2"
+        ],
+        "InQty": [
+          "50",
+          "5",
+          "250"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Antimatter Bypass",
+        "Time": "600",
+        "OutQty": "1",
+        "InId": [
+          "FUEL2",
+          "CATALYST2",
+          "STELLAR2"
+        ],
+        "InQty": [
+          "25",
+          "5",
+          "250"
+        ]
+      }
+    ],
+    "GRENFUEL1": [
+      {
+        "Name": "Requested Operation: Plasma Pressurisation",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "OXYGEN",
+          "LAND1",
+          "FUEL1"
+        ],
+        "InQty": [
+          "10",
+          "20",
+          "20"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Plasma Pressurisation",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "OXYGEN",
+          "LAND1",
+          "FUEL2"
+        ],
+        "InQty": [
+          "10",
+          "20",
+          "10"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Plasma Pressurisation",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "OXYGEN",
+          "LAND2",
+          "FUEL1"
+        ],
+        "InQty": [
+          "10",
+          "20",
+          "20"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Plasma Pressurisation",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "OXYGEN",
+          "FUEL2",
+          "LAND2"
+        ],
+        "InQty": [
+          "10",
+          "10",
+          "20"
+        ]
+      }
+    ],
+    "PRODFUEL2": [
+      {
+        "Name": "Requested Operation: Advanced Oxygen Capture",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "OXYGEN",
+          "FUEL2",
+          "LAUNCHSUB"
+        ],
+        "InQty": [
+          "10",
+          "10",
+          "10"
+        ]
+      }
+    ],
+    "LAUNCHFUEL": [
+      {
+        "Name": "Requested Operation: Di-hydrogen Capture",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "LAUNCHSUB",
+          "LAND1",
+          "CATALYST2"
+        ],
+        "InQty": [
+          "10",
+          "20",
+          "5"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Di-hydrogen Capture",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "LAUNCHSUB",
+          "LAND2",
+          "CATALYST1"
+        ],
+        "InQty": [
+          "10",
+          "20",
+          "10"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Di-hydrogen Capture",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "LAUNCHSUB",
+          "LAND3",
+          "CATALYST2"
+        ],
+        "InQty": [
+          "10",
+          "10",
+          "5"
+        ]
+      }
+    ],
+    "POWERCELL": [
+      {
+        "Name": "Requested Operation: Ion Capture",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "LAND1",
+          "ASTEROID1",
+          "CATALYST1"
+        ],
+        "InQty": [
+          "10",
+          "10",
+          "10"
+        ]
+      }
+    ],
+    "POWERCELL2": [
+      {
+        "Name": "Requested Operation: Advanced Ion Capture",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "LAND2",
+          "CATALYST2",
+          "ASTEROID1"
+        ],
+        "InQty": [
+          "10",
+          "10",
+          "10"
+        ]
+      }
+    ],
+    "ALLOY1": [
+      {
+        "Name": "Requested Operation: Alloy Latticing",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "LUSH1",
+          "CAVE1",
+          "ROCKETSUB"
+        ],
+        "InQty": [
+          "30",
+          "60",
+          "20"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Alloy Latticing",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "LUSH1",
+          "CAVE2",
+          "ROCKETSUB"
+        ],
+        "InQty": [
+          "30",
+          "30",
+          "20"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Alloy Latticing",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "LUSH1",
+          "CAVE1",
+          "ASTEROID1"
+        ],
+        "InQty": [
+          "30",
+          "60",
+          "20"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Alloy Latticing",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "LUSH1",
+          "CAVE2",
+          "ASTEROID1"
+        ],
+        "InQty": [
+          "30",
+          "30",
+          "20"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Alloy Latticing",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "LUSH1",
+          "CAVE1",
+          "ASTEROID2"
+        ],
+        "InQty": [
+          "30",
+          "60",
+          "10"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Alloy Latticing",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "LUSH1",
+          "CAVE2",
+          "ASTEROID2"
+        ],
+        "InQty": [
+          "30",
+          "30",
+          "10"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Alloy Latticing",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "LUSH1",
+          "CAVE1",
+          "ASTEROID3"
+        ],
+        "InQty": [
+          "30",
+          "60",
+          "5"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Alloy Latticing",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "LUSH1",
+          "CAVE2",
+          "ASTEROID3"
+        ],
+        "InQty": [
+          "30",
+          "30",
+          "5"
+        ]
+      }
+    ],
+    "ALLOY2": [
+      {
+        "Name": "Requested Operation: Alloy Latticing",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "DUSTY1",
+          "LAND1",
+          "ROCKETSUB"
+        ],
+        "InQty": [
+          "30",
+          "120",
+          "20"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Alloy Latticing",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "DUSTY1",
+          "LAND2",
+          "ROCKETSUB"
+        ],
+        "InQty": [
+          "30",
+          "60",
+          "20"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Alloy Latticing",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "DUSTY1",
+          "LAND1",
+          "ASTEROID1"
+        ],
+        "InQty": [
+          "30",
+          "120",
+          "20"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Alloy Latticing",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "DUSTY1",
+          "LAND2",
+          "ASTEROID1"
+        ],
+        "InQty": [
+          "30",
+          "60",
+          "20"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Alloy Latticing",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "DUSTY1",
+          "LAND1",
+          "ASTEROID2"
+        ],
+        "InQty": [
+          "30",
+          "120",
+          "10"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Alloy Latticing",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "DUSTY1",
+          "LAND2",
+          "ASTEROID2"
+        ],
+        "InQty": [
+          "30",
+          "60",
+          "10"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Alloy Latticing",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "DUSTY1",
+          "LAND1",
+          "ASTEROID3"
+        ],
+        "InQty": [
+          "30",
+          "120",
+          "5"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Alloy Latticing",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "DUSTY1",
+          "LAND2",
+          "ASTEROID3"
+        ],
+        "InQty": [
+          "30",
+          "60",
+          "5"
+        ]
+      }
+    ],
+    "ALLOY3": [
+      {
+        "Name": "Requested Operation: Alloy Latticing",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "TOXIC1",
+          "CAVE1",
+          "ROCKETSUB"
+        ],
+        "InQty": [
+          "30",
+          "60",
+          "20"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Alloy Latticing",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "TOXIC1",
+          "CAVE2",
+          "ROCKETSUB"
+        ],
+        "InQty": [
+          "30",
+          "30",
+          "20"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Alloy Latticing",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "TOXIC1",
+          "CAVE1",
+          "ASTEROID1"
+        ],
+        "InQty": [
+          "30",
+          "60",
+          "20"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Alloy Latticing",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "TOXIC1",
+          "CAVE2",
+          "ASTEROID1"
+        ],
+        "InQty": [
+          "30",
+          "30",
+          "20"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Alloy Latticing",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "TOXIC1",
+          "CAVE1",
+          "ASTEROID2"
+        ],
+        "InQty": [
+          "30",
+          "60",
+          "10"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Alloy Latticing",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "TOXIC1",
+          "CAVE2",
+          "ASTEROID2"
+        ],
+        "InQty": [
+          "30",
+          "30",
+          "10"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Alloy Latticing",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "TOXIC1",
+          "CAVE1",
+          "ASTEROID3"
+        ],
+        "InQty": [
+          "30",
+          "60",
+          "5"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Alloy Latticing",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "TOXIC1",
+          "CAVE2",
+          "ASTEROID3"
+        ],
+        "InQty": [
+          "30",
+          "30",
+          "5"
+        ]
+      }
+    ],
+    "ALLOY4": [
+      {
+        "Name": "Requested Operation: Alloy Latticing",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "RADIO1",
+          "LAND1",
+          "ROCKETSUB"
+        ],
+        "InQty": [
+          "30",
+          "120",
+          "20"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Alloy Latticing",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "RADIO1",
+          "LAND2",
+          "ROCKETSUB"
+        ],
+        "InQty": [
+          "30",
+          "60",
+          "20"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Alloy Latticing",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "RADIO1",
+          "LAND1",
+          "ASTEROID1"
+        ],
+        "InQty": [
+          "30",
+          "120",
+          "20"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Alloy Latticing",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "RADIO1",
+          "LAND2",
+          "ASTEROID1"
+        ],
+        "InQty": [
+          "30",
+          "60",
+          "20"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Alloy Latticing",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "RADIO1",
+          "LAND1",
+          "ASTEROID2"
+        ],
+        "InQty": [
+          "30",
+          "120",
+          "10"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Alloy Latticing",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "RADIO1",
+          "LAND2",
+          "ASTEROID2"
+        ],
+        "InQty": [
+          "30",
+          "60",
+          "10"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Alloy Latticing",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "RADIO1",
+          "LAND1",
+          "ASTEROID3"
+        ],
+        "InQty": [
+          "30",
+          "120",
+          "5"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Alloy Latticing",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "RADIO1",
+          "LAND2",
+          "ASTEROID3"
+        ],
+        "InQty": [
+          "30",
+          "60",
+          "5"
+        ]
+      }
+    ],
+    "ALLOY5": [
+      {
+        "Name": "Requested Operation: Alloy Latticing",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "HOT1",
+          "CAVE1",
+          "ROCKETSUB"
+        ],
+        "InQty": [
+          "30",
+          "60",
+          "20"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Alloy Latticing",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "HOT1",
+          "CAVE2",
+          "ROCKETSUB"
+        ],
+        "InQty": [
+          "30",
+          "30",
+          "20"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Alloy Latticing",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "HOT1",
+          "CAVE1",
+          "ASTEROID1"
+        ],
+        "InQty": [
+          "30",
+          "60",
+          "20"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Alloy Latticing",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "HOT1",
+          "CAVE2",
+          "ASTEROID1"
+        ],
+        "InQty": [
+          "30",
+          "30",
+          "20"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Alloy Latticing",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "HOT1",
+          "CAVE1",
+          "ASTEROID2"
+        ],
+        "InQty": [
+          "30",
+          "60",
+          "10"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Alloy Latticing",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "HOT1",
+          "CAVE2",
+          "ASTEROID2"
+        ],
+        "InQty": [
+          "30",
+          "30",
+          "10"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Alloy Latticing",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "HOT1",
+          "CAVE1",
+          "ASTEROID3"
+        ],
+        "InQty": [
+          "30",
+          "60",
+          "5"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Alloy Latticing",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "HOT1",
+          "CAVE2",
+          "ASTEROID3"
+        ],
+        "InQty": [
+          "30",
+          "30",
+          "5"
+        ]
+      }
+    ],
+    "ALLOY6": [
+      {
+        "Name": "Requested Operation: Alloy Latticing",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "COLD1",
+          "CAVE1",
+          "ROCKETSUB"
+        ],
+        "InQty": [
+          "30",
+          "60",
+          "20"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Alloy Latticing",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "COLD1",
+          "CAVE2",
+          "ROCKETSUB"
+        ],
+        "InQty": [
+          "30",
+          "30",
+          "20"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Alloy Latticing",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "COLD1",
+          "CAVE1",
+          "ASTEROID1"
+        ],
+        "InQty": [
+          "30",
+          "60",
+          "20"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Alloy Latticing",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "COLD1",
+          "CAVE2",
+          "ASTEROID1"
+        ],
+        "InQty": [
+          "30",
+          "30",
+          "20"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Alloy Latticing",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "COLD1",
+          "CAVE1",
+          "ASTEROID2"
+        ],
+        "InQty": [
+          "30",
+          "60",
+          "10"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Alloy Latticing",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "COLD1",
+          "CAVE2",
+          "ASTEROID2"
+        ],
+        "InQty": [
+          "30",
+          "30",
+          "10"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Alloy Latticing",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "COLD1",
+          "CAVE1",
+          "ASTEROID3"
+        ],
+        "InQty": [
+          "30",
+          "60",
+          "5"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Alloy Latticing",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "COLD1",
+          "CAVE2",
+          "ASTEROID3"
+        ],
+        "InQty": [
+          "30",
+          "30",
+          "5"
+        ]
+      }
+    ],
+    "REACTION1": [
+      {
+        "Name": "Requested Operation: High-Speed Sublimation",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "GAS1",
+          "FUEL1",
+          "WATER1"
+        ],
+        "InQty": [
+          "100",
+          "20",
+          "10"
+        ]
+      },
+      {
+        "Name": "Requested Operation: High-Speed Sublimation",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "GAS1",
+          "FUEL2",
+          "WATER1"
+        ],
+        "InQty": [
+          "100",
+          "10",
+          "10"
+        ]
+      },
+      {
+        "Name": "Requested Operation: High-Speed Sublimation",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "GAS1",
+          "FUEL1",
+          "WATER2"
+        ],
+        "InQty": [
+          "100",
+          "20",
+          "5"
+        ]
+      },
+      {
+        "Name": "Requested Operation: High-Speed Sublimation",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "GAS1",
+          "FUEL2",
+          "WATER2"
+        ],
+        "InQty": [
+          "100",
+          "10",
+          "5"
+        ]
+      }
+    ],
+    "REACTION2": [
+      {
+        "Name": "Requested Operation: High-Speed Sublimation",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "GAS2",
+          "FUEL1",
+          "WATER1"
+        ],
+        "InQty": [
+          "100",
+          "20",
+          "10"
+        ]
+      },
+      {
+        "Name": "Requested Operation: High-Speed Sublimation",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "GAS2",
+          "FUEL2",
+          "WATER1"
+        ],
+        "InQty": [
+          "100",
+          "10",
+          "10"
+        ]
+      },
+      {
+        "Name": "Requested Operation: High-Speed Sublimation",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "GAS2",
+          "FUEL1",
+          "WATER2"
+        ],
+        "InQty": [
+          "100",
+          "20",
+          "5"
+        ]
+      },
+      {
+        "Name": "Requested Operation: High-Speed Sublimation",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "GAS2",
+          "FUEL2",
+          "WATER2"
+        ],
+        "InQty": [
+          "100",
+          "10",
+          "5"
+        ]
+      }
+    ],
+    "REACTION3": [
+      {
+        "Name": "Requested Operation: High-Speed Sublimation",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "GAS3",
+          "FUEL1",
+          "WATER1"
+        ],
+        "InQty": [
+          "100",
+          "20",
+          "10"
+        ]
+      },
+      {
+        "Name": "Requested Operation: High-Speed Sublimation",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "GAS3",
+          "FUEL2",
+          "WATER1"
+        ],
+        "InQty": [
+          "100",
+          "10",
+          "10"
+        ]
+      },
+      {
+        "Name": "Requested Operation: High-Speed Sublimation",
+        "Time": "90",
+        "OutQty": "1",
+        "InId": [
+          "GAS3",
+          "FUEL1",
+          "WATER2"
+        ],
+        "InQty": [
+          "100",
+          "20",
+          "5"
+        ]
+      },
+      {
+        "Name": "Requested Operation: High-Speed Sublimation",
+        "Time": "20",
+        "OutQty": "1",
+        "InId": [
+          "GAS3",
+          "FUEL2",
+          "WATER2"
+        ],
+        "InQty": [
+          "100",
+          "10",
+          "5"
+        ]
+      }
+    ]
+  },
+  "errors": [
+    "Material TRA_COMMODITY1 is missing localization for lowercase name undefined",
+    "Material TRA_COMMODITY2 is missing localization for lowercase name undefined",
+    "Material TRA_COMMODITY3 is missing localization for lowercase name undefined",
+    "Material TRA_COMMODITY4 is missing localization for lowercase name undefined",
+    "Material TRA_COMMODITY5 is missing localization for lowercase name undefined",
+    "Material TRA_COMPONENT1 is missing localization for lowercase name undefined",
+    "Material TRA_COMPONENT2 is missing localization for lowercase name undefined",
+    "Material TRA_COMPONENT3 is missing localization for lowercase name undefined",
+    "Material TRA_COMPONENT4 is missing localization for lowercase name undefined",
+    "Material TRA_COMPONENT5 is missing localization for lowercase name undefined",
+    "Material BRIDGECONNECTOR is missing localization for lowercase name undefined",
+    "Material CORRIDOR_WINDOW is missing localization for lowercase name undefined",
+    "Material HEALTHPLANT is missing localization for lowercase name undefined",
+    "Material NPCEXPLORER001 is missing localization for lowercase name undefined",
+    "Recipe RECIPE_ROBOT1 has invalid ingredients.",
+    "Recipe RECIPE_ROCKETSUB has no ingredients.",
+    "Recipe RECIPE_3INPUT_STELLAR2 is missing localization for name RECIPE_3INPUT_STELLAR2",
+    "Recipe RECIPE_3INPUT_STELLAR2 is missing localization for name RECIPE_3INPUT_STELLAR2",
+    "Recipe RECIPE_3INPUT_STELLAR2 is missing localization for name RECIPE_3INPUT_STELLAR2",
+    "Recipe RECIPE_3INPUT_STELLAR2 is missing localization for name RECIPE_3INPUT_STELLAR2"
+  ]
+}
