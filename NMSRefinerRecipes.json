@@ -442,6 +442,11 @@
       "Name": "Nitrogen Salt",
       "Icon": "TEXTURES/UI/FRONTEND/ICONS/UPDATE3/REACTION.3.DDS",
       "Color": "F3A922"
+    },
+    "SILICATEP": {
+      "Name": "Silicate Powder",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/UPDATE3/REACTION.3.DDS",
+      "Color": "F3A922"
     }
   },
   "recipes": {
@@ -451,10 +456,10 @@
         "Time": "60",
         "OutQty": "1",
         "InId": [
-          "ASTEROID1"
+          "SILICATEP"
         ],
         "InQty": [
-          "100"
+          "40"
         ]
       }
     ],

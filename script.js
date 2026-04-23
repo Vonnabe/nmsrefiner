@@ -91,7 +91,7 @@ function renderModalItems(searchTerm = "") {
                 
                 div.innerHTML = `
                     <div class="refiner-badge ${typeName}">${level}</div>
-                    <div class="slot-icon" style="width:50px; height:50px; margin: 0 auto;">
+                    <div class="slot-icon" style="width:90px; height:90px; margin: 0 auto;">
                         <img src="icons/${outputId}.png" onerror="this.src='icons/default.png'; this.onerror=null;">
                     </div>
                     <span class="mat-name">${matInfo.Name}</span>
@@ -146,35 +146,44 @@ function selectRecipe(outputId, recipeIndex) {
     });
 
     // --- 4. UPDATE SLOTS (OUTPUT) ---
-    outputSlot.title = outputMat.Name; // Set hover for output
+// Set the hover title
+    outputSlot.title = outputMat.Name; 
+    outputSlot.dataset.label = outputMat.Name.toUpperCase();
+
     const outIcon = outputSlot.querySelector('.slot-icon');
     const outCount = outputSlot.querySelector('.slot-count');
     outIcon.innerHTML = `<img src="icons/${outputId}.png" onerror="this.replaceWith(Object.assign(document.createElement('span'), {innerText: '${outputMat.Symbol}'}))">`;
     outCount.innerText = recipe.OutQty || "1";
 
 // --- 5. UPDATE SLOTS (INPUTS) ---
-    for (let i = 1; i <= 3; i++) {
-        const iconContainer = document.getElementById(`input-0${i}-icon`);
-        const countLabel = document.getElementById(`input-0${i}-count`);
-        const ingredientId = recipe.InId[i - 1];
+for (let i = 1; i <= 3; i++) {
+    const iconContainer = document.getElementById(`input-0${i}-icon`);
+    const countLabel = document.getElementById(`input-0${i}-count`);
+    const ingredientId = recipe.InId[i - 1];
+    
+    const slotElement = iconContainer.parentElement;
 
-        if (ingredientId && nmsDatabase.mats[ingredientId]) {
-            const matInfo = nmsDatabase.mats[ingredientId];
-            
-            // Apply the title to the parent (the actual slot box)
-            iconContainer.parentElement.title = matInfo.Name;
-            
-            iconContainer.innerHTML = `<img src="icons/${ingredientId}.png" onerror="this.replaceWith(Object.assign(document.createElement('span'), {innerText: '${matInfo.Symbol}'}))">`;
-            if (countLabel) countLabel.innerText = recipe.InQty[i - 1];
-            iconContainer.parentElement.style.opacity = "1";
-        } else {
-            // Reset title when empty
-            iconContainer.parentElement.title = "Empty Slot";
-            iconContainer.innerHTML = "<span>--</span>";
-            if (countLabel) countLabel.innerText = "0";
-            iconContainer.parentElement.style.opacity = "0.3";
-        }
+    if (ingredientId && nmsDatabase.mats[ingredientId]) {
+        const matInfo = nmsDatabase.mats[ingredientId];
+        
+        // 1. Update Title
+        slotElement.title = matInfo.Name;
+        slotElement.dataset.label = matInfo.Name.toUpperCase();
+        
+        iconContainer.innerHTML = `<img src="icons/${ingredientId}.png" onerror="this.replaceWith(Object.assign(document.createElement('span'), {innerText: '${matInfo.Symbol}'}))">`;
+        if (countLabel) countLabel.innerText = recipe.InQty[i - 1];
+        slotElement.style.opacity = "1";
+
+    } else {
+        slotElement.title = "Empty Slot";
+        
+        slotElement.dataset.label = `INPUT 0${i}`;
+        
+        iconContainer.innerHTML = "<span>--</span>";
+        if (countLabel) countLabel.innerText = "0";
+        slotElement.style.opacity = "0.3";
     }
+}
 
     // --- 6. UPDATE INFO PANEL & CLOSE ---
     infoContainer.innerHTML = `
@@ -214,6 +223,9 @@ clearBtn.addEventListener('click', () => {
     // 1. Reset Output Slot
     const outIcon = outputSlot.querySelector('.slot-icon');
     const outCount = outputSlot.querySelector('.slot-count');
+    const outLabel = outputSlot.dataset.label;
+    outputSlot.title = "Select Output";
+    outputSlot.dataset.label = "SELECT OUTPUT";
     outIcon.innerHTML = "<span>?</span>";
     outCount.innerText = "--";
 
@@ -221,6 +233,10 @@ clearBtn.addEventListener('click', () => {
     for (let i = 1; i <= 3; i++) {
         const iconContainer = document.getElementById(`input-0${i}-icon`);
         const countLabel = document.getElementById(`input-0${i}-count`);
+        const slotElement = iconContainer.parentElement;
+        
+        slotElement.title = `Empty Input 0${i}`;
+        slotElement.dataset.label = `INPUT 0${i}`;
         
         iconContainer.innerHTML = "<span>--</span>";
         if (countLabel) countLabel.innerText = "0";
