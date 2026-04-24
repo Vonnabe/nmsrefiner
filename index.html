@@ -12,12 +12,11 @@
 </script>
 
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>NMS // Refiner Terminal</title>
     <link rel="icon" type="image/x-icon" href="/icons/refiner.png">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="description" content="An essential tool for the modern Interloper. This terminal provides instant access to the Atlas database of elemental transmutations. Refine your resources on the go, no signal required.">
     <meta property="og:title" content="NMS // REFINER TERMINAL">
     <meta property="og:description" content="Access the Atlas Refiner Database. 16 // 16 // 16">
@@ -30,7 +29,7 @@
     <header>
         <div class="logo-container">
             <div class="atlas-diamond"></div>
-            <div class="logo">TERMINAL // REFINER_v0.1</div>
+            <div class="logo">TERMINAL // REFINER_v0.2</div>
         </div>
     </header>
 
@@ -117,13 +116,21 @@
             <span class="glitch">16 // 16 // 16</span>
         </div>
     </footer>
-    <div class="about-trigger" id="about-open">DATABASE_INFO // EXTRACT</div>
+    <div class="terminal-controls">
+    <div class="about-trigger patch-notes-btn" id="patch-notes-open">
+        PATCH_NOTES // LOG_V0.2
+    </div>
+
+    <div class="about-trigger" id="about-open">
+        DATABASE_INFO // EXTRACT
+    </div>
+</div>
 
 <div id="about-modal" class="modal-overlay">
 
     <div class="about-content">
         <div class="modal-header">
-            <h3>TERMINAL_DIAGNOSTICS // ABT_V0.1</h3>
+            <h3>TERMINAL_DIAGNOSTICS // ABT_V0.2</h3>
             <button id="about-close" class="close-btn">&times;</button>
         </div>
         
@@ -151,7 +158,7 @@
             <div class="tech-specs">
                 <div class="spec-item">
                     <span class="spec-title">DATABASE</span>
-                    <span class="spec-detail">Hardcoded JSON by : SCLARK39</span>
+                    <span class="spec-detail">JSON by : SCLARK39</span>
                 </div>
                 <div class="spec-item">
                     <span class="spec-title">INTERFACE</span>
@@ -165,6 +172,62 @@
 
             <footer class="about-footer">
                 BOUNDARY_STRENGTH: 16 // 16 // 16
+            </footer>
+        </div>
+    </div>
+</div>
+
+<div id="patch-modal" class="modal-overlay">
+    <div class="about-content patch-content">
+        <div class="modal-header">
+            <h3>TERMINAL_LOG // PATCH_NOTES_V0.2</h3>
+            <button id="patch-close" class="close-btn">&times;</button>
+        </div>
+        
+        <div class="about-body">
+            <div class="scanline"></div>
+            
+            <section class="diagnostic-block">
+                <span class="label">LATEST_DEPLOY:</span> <span class="value">24.04.2026</span><br>
+                <span class="label">BUILD_STATUS:</span> <span class="value">ONLINE</span>
+            </section>
+
+            <div class="changelog-scroll" style="margin-top: 20px; max-height: 300px; overflow-y: auto;">
+                <div class="version-entry" style="margin-bottom: 20px;">
+                    <strong style="color: #ffcc00;">REFINER_v0.2 - ONLINE</strong>
+                    <P style="line-height: 1.6; color: #79aeb2; margin-bottom: 15px;">While the site is not fully ready to be used as a refiner for your recipes, I am working on updating the recipes, adding all the materials missing and impoving
+                    the UI to be more user friendly for desktops and mobiles. With this, the "0.2" version includes the following updates:</P>
+<div class="patch-list">
+    <div class="patch-item">
+        <span class="patch-bullet">[#]</span>
+        <p>Updated recipes for: <span class="highlight">Pyrite, Glass, Nanite Clusters, Faecium, Carbon, Condensed Carbon, Pure Ferrite, Ionised Cobalt.</span></p>
+    </div>
+    
+    <div class="patch-item">
+        <span class="patch-bullet">[#]</span>
+        <p>Increased font size for better readability across devices.</p>
+    </div>
+    
+    <div class="patch-item">
+        <span class="patch-bullet">[#]</span>
+        <p>Improved UI responsiveness for both desktop and mobile modules.</p>
+    </div>
+    
+    <div class="patch-item">
+        <span class="patch-bullet">[#]</span>
+        <p>Added Patch Notes terminal functionality for future iterations.</p>
+    </div>
+</div>
+                <P style="line-height: 1.6; color: #79aeb2; margin-bottom: 15px;">Further down the road, I will be adding more features and improving the site as much as I can,
+                 with more updates on the recipes and taking into consideration the feedback I receive
+                  from you guys. I hope you enjoy using this tool as much as I enjoyed making it.
+                </p>
+                <h3 style="color: #ffcc00; text-align: left; font-family: monospace; letter-spacing: 2px; margin-top: 25px;">// SIGNED: VONNABE</h3>
+                </div>
+            
+
+            <footer class="about-footer">
+                // END OF LOG //
             </footer>
         </div>
     </div>
