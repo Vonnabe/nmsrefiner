@@ -283,8 +283,8 @@
       "Color": "05B83"
     },
     "PLANT_POOP": {
-      "Name": "Coprite",
-      "Symbol": "Cr",
+      "Name": "Faecium",
+      "Symbol": "Fa",
       "Icon": "TEXTURES/UI/FRONTEND/ICONS/U4SUBSTANCES/SUBSTANCE.PLANT.POOP.DDS",
       "Color": "78502E"
     },
@@ -445,6 +445,83 @@
     },
     "SILICATEP": {
       "Name": "Silicate Powder",
+      "Symbol": "Si",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/UPDATE3/REACTION.3.DDS",
+      "Color": "F3A922"
+    },
+    "LITHIUM01": {
+      "Name": "Lithium",
+      "Symbol": "Li",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/UPDATE3/REACTION.3.DDS",
+      "Color": "F3A922"
+    },
+    "HEXITE": {
+      "Name": "Hexite",
+      "Symbol": "X",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/UPDATE3/REACTION.3.DDS",
+      "Color": "F3A922"
+    },
+    "HADALCORE": {
+      "Name": "Hadal Core",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/UPDATE3/REACTION.3.DDS",
+      "Color": "F3A922"
+    },
+    "HYALINE": {
+      "Name": "Hyaline Brain",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/UPDATE3/REACTION.3.DDS",
+      "Color": "F3A922"
+    },
+    "INVMIRROR": {
+      "Name": "Inverted Mirror",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/UPDATE3/REACTION.3.DDS",
+      "Color": "F3A922"
+    },
+    "LARVALCORE": {
+      "Name": "Larval Core",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/UPDATE3/REACTION.3.DDS",
+      "Color": "F3A922"
+    },
+    "VILESPAWN": {
+      "Name": "Vile Spawn",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/UPDATE3/REACTION.3.DDS",
+      "Color": "F3A922"
+    },
+    "FLESHROPE": {
+      "Name": "Flesh Rope",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/UPDATE3/REACTION.3.DDS",
+      "Color": "F3A922"
+    },
+    "RADIANTSHARD": {
+      "Name": "Radiant Shard",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/UPDATE3/REACTION.3.DDS",
+      "Color": "F3A922"
+    },
+    "SDATA1": {
+      "Name": "Salvaged Data",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/UPDATE3/REACTION.3.DDS",
+      "Color": "F3A922"
+    },
+    "SPACEGUNK6": {
+      "Name": "Tainted Metal",
+      "Symbol": "Un",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/UPDATE3/REACTION.3.DDS",
+      "Color": "F3A922"
+    },
+    "GAS4": {
+      "Name": "Methane",
+      "Symbol": "CH4",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/UPDATE3/REACTION.3.DDS",
+      "Color": "F3A922"
+    },
+    "WATER3": {
+      "Name": "Cyto-Phosphate",
+      "Symbol": "Cy",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/UPDATE3/REACTION.3.DDS",
+      "Color": "F3A922"
+    },
+    "LAND4": {
+      "Name": "Polished Stone",
+      "Symbol": "R",
       "Icon": "TEXTURES/UI/FRONTEND/ICONS/UPDATE3/REACTION.3.DDS",
       "Color": "F3A922"
     }
@@ -526,23 +603,49 @@
           "2",
           "1"
         ]
+      },
+      {
+        "Name": "Requested Operation: Loosen Bonds",
+        "Time": "36",
+        "OutQty": "2",
+        "InId": [
+          "LITHIUM01",
+          "LAND2"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Loosen Bonds",
+        "Time": "0.36",
+        "OutQty": "1",
+        "InId": [
+          "LITHIUM01",
+          "LAND1"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
       }
     ],
     "TECHFRAG": [
       {
         "Name": "Requested Operation: Reality Warping",
-        "Time": "60",
+        "Time": "0.24",
         "OutQty": "1",
         "InId": [
           "ASTEROID3"
         ],
         "InQty": [
-          "5"
+          "35"
         ]
       },
       {
         "Name": "Requested Operation: Recycle Waste Materials",
-        "Time": "150",
+        "Time": "0.6",
         "OutQty": "1",
         "InId": [
           "SPACEGUNK2"
@@ -553,7 +656,7 @@
       },
       {
         "Name": "Requested Operation: Transmutation",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "1",
         "InId": [
           "ASTEROID1",
@@ -561,16 +664,139 @@
           "ASTEROID3"
         ],
         "InQty": [
-          "250",
-          "250",
-          "250"
+          "15",
+          "15",
+          "25"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Alchemical Construction",
+        "Time": "0.24",
+        "OutQty": "1",
+        "InId": [
+          "PLANT_POOP",
+          "HEXITE"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Doom Cycling",
+        "Time": "0.24",
+        "OutQty": "50",
+        "InId": [
+          "HADALCORE"
+        ],
+        "InQty": [
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Sentience Extraction",
+        "Time": "12.8",
+        "OutQty": "230",
+        "InId": [
+          "HYALINE"
+        ],
+        "InQty": [
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Purge Corruption",
+        "Time": "8.8",
+        "OutQty": "95",
+        "InId": [
+          "INVMIRROR"
+        ],
+        "InQty": [
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: NOT RECOMMENDED",
+        "Time": "0.24",
+        "OutQty": "50",
+        "InId": [
+          "LARVALCORE"
+        ],
+        "InQty": [
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Loosen Bonds",
+        "Time": "0.36",
+        "OutQty": "50",
+        "InId": [
+          "VILESPAWN"
+        ],
+        "InQty": [
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Loosen Bonds",
+        "Time": "0.36",
+        "OutQty": "50",
+        "InId": [
+          "FLESHROPE"
+        ],
+        "InQty": [
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Subjugation of Glass",
+        "Time": "7.2",
+        "OutQty": "50",
+        "InId": [
+          "RADIANTSHARD"
+        ],
+        "InQty": [
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Nanite Extraction",
+        "Time": "1.28",
+        "OutQty": "15",
+        "InId": [
+          "SDATA1"
+        ],
+        "InQty": [
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Doom Cycling",
+        "Time": "0.36",
+        "OutQty": "2",
+        "InId": [
+          "SPACEGUNK6"
+        ],
+        "InQty": [
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Reality Filtering",
+        "Time": "0.12",
+        "OutQty": "1",
+        "InId": [
+          "ROBOT1"
+        ],
+        "InQty": [
+          "25"
         ]
       }
     ],
     "PLANT_POOP": [
       {
         "Name": "Requested Operation: Assisted Decomposition",
-        "Time": "60",
+        "Time": "0.24",
         "OutQty": "1",
         "InId": [
           "CREATURE1"
@@ -581,7 +807,7 @@
       },
       {
         "Name": "Requested Operation: Assisted Decomposition",
-        "Time": "20",
+        "Time": "0.08",
         "OutQty": "1",
         "InId": [
           "LAUNCHSUB",
@@ -594,7 +820,7 @@
       },
       {
         "Name": "Requested Operation: Runaway Decomposition",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "3",
         "InId": [
           "FUEL1",
@@ -607,7 +833,7 @@
       },
       {
         "Name": "Requested Operation: Runaway Decomposition",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "4",
         "InId": [
           "FUEL2",
@@ -620,7 +846,7 @@
       },
       {
         "Name": "Requested Operation: Oxygenate Microbes",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "3",
         "InId": [
           "PLANT_POOP",
@@ -633,11 +859,24 @@
       },
       {
         "Name": "Requested Operation: Encourage Growth",
-        "Time": "60",
+        "Time": "0.24",
         "OutQty": "1",
         "InId": [
           "GAS1",
           "GAS3"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Organic Expansion",
+        "Time": "0.36",
+        "OutQty": "1",
+        "InId": [
+          "GAS4",
+          "CREATURE1"
         ],
         "InQty": [
           "1",
@@ -648,7 +887,7 @@
     "FUEL1": [
       {
         "Name": "Requested Operation: Inefficient Burn",
-        "Time": "20",
+        "Time": "0.08",
         "OutQty": "1",
         "InId": [
           "OXYGEN"
@@ -659,7 +898,7 @@
       },
       {
         "Name": "Requested Operation: Release Carbon",
-        "Time": "30",
+        "Time": "0.12",
         "OutQty": "2",
         "InId": [
           "FUEL2"
@@ -670,7 +909,7 @@
       },
       {
         "Name": "Requested Operation: Burn Plantlife",
-        "Time": "30",
+        "Time": "0.12",
         "OutQty": "2",
         "InId": [
           "PLANT_TOXIC"
@@ -681,18 +920,7 @@
       },
       {
         "Name": "Requested Operation: Burn Plantlife",
-        "Time": "30",
-        "OutQty": "2",
-        "InId": [
-          "PLANT_SNOW"
-        ],
-        "InQty": [
-          "1"
-        ]
-      },
-      {
-        "Name": "Requested Operation: Burn Plantlife",
-        "Time": "30",
+        "Time": "0.12",
         "OutQty": "2",
         "InId": [
           "PLANT_RADIO"
@@ -703,7 +931,7 @@
       },
       {
         "Name": "Requested Operation: Burn Plantlife",
-        "Time": "30",
+        "Time": "0.12",
         "OutQty": "2",
         "InId": [
           "PLANT_DUST"
@@ -714,7 +942,7 @@
       },
       {
         "Name": "Requested Operation: Burn Plantlife",
-        "Time": "30",
+        "Time": "0.12",
         "OutQty": "2",
         "InId": [
           "PLANT_HOT"
@@ -725,7 +953,7 @@
       },
       {
         "Name": "Requested Operation: Burn Plantlife",
-        "Time": "30",
+        "Time": "0.12",
         "OutQty": "2",
         "InId": [
           "PLANT_LUSH"
@@ -738,7 +966,7 @@
     "JELLY": [
       {
         "Name": "Requested Operation: Condense Di-hydrogen",
-        "Time": "120",
+        "Time": "60",
         "OutQty": "1",
         "InId": [
           "LAUNCHSUB"
@@ -750,19 +978,8 @@
     ],
     "FUEL2": [
       {
-        "Name": "Requested Operation: Carbon Melting",
-        "Time": "200",
-        "OutQty": "150",
-        "InId": [
-          "FUELPROD3"
-        ],
-        "InQty": [
-          "1"
-        ]
-      },
-      {
         "Name": "Requested Operation: Condense Carbon",
-        "Time": "45",
+        "Time": "0.18",
         "OutQty": "1",
         "InId": [
           "FUEL1"
@@ -770,10 +987,21 @@
         "InQty": [
           "2"
         ]
+      },      
+      {
+        "Name": "Requested Operation: Algal Processing",
+        "Time": "0.24",
+        "OutQty": "1",
+        "InId": [
+          "WATER3"
+        ],
+        "InQty": [
+          "1"
+        ]
       },
       {
         "Name": "Requested Operation: Harness Energy",
-        "Time": "10",
+        "Time": "0.04",
         "OutQty": "2",
         "InId": [
           "RADIO1",
@@ -786,7 +1014,7 @@
       },
       {
         "Name": "Requested Operation: Oxygenate Carbon",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "5",
         "InId": [
           "FUEL1",
@@ -799,7 +1027,7 @@
       },
       {
         "Name": "Requested Operation: Oxygenate Carbon",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "6",
         "InId": [
           "FUEL2",
@@ -812,7 +1040,7 @@
       },
       {
         "Name": "Requested Operation: Feed Microbes",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "2",
         "InId": [
           "PLANT_POOP",
@@ -825,7 +1053,7 @@
       },
       {
         "Name": "Requested Operation: Feed Microbes",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "3",
         "InId": [
           "PLANT_POOP",
@@ -838,7 +1066,7 @@
       },
       {
         "Name": "Requested Operation: Feed Microbes",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "2",
         "InId": [
           "PLANT_POOP",
@@ -852,11 +1080,11 @@
     ],
     "LAND2": [
       {
-        "Name": "Requested Operation: Rare Metal Detoxification",
-        "Time": "200",
-        "OutQty": "150",
+        "Name": "Requested Operation: Recycle Stone",
+        "Time": "0.24",
+        "OutQty": "2",
         "InId": [
-          "LANDPROD3"
+          "LAND4"
         ],
         "InQty": [
           "1"
@@ -864,7 +1092,7 @@
       },
       {
         "Name": "Requested Operation: Extract Metallic Elements",
-        "Time": "30",
+        "Time": "0.12",
         "OutQty": "1",
         "InId": [
           "LAND1"
@@ -875,7 +1103,7 @@
       },
       {
         "Name": "Requested Operation: Demagnetise Metal",
-        "Time": "40",
+        "Time": "0.16",
         "OutQty": "2",
         "InId": [
           "LAND3"
@@ -886,7 +1114,7 @@
       },
       {
         "Name": "Requested Operation: Matter Expansion",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "3",
         "InId": [
           "LAND1",
@@ -900,19 +1128,8 @@
     ],
     "CAVE2": [
       {
-        "Name": "Requested Operation: Cobalt Cracking",
-        "Time": "200",
-        "OutQty": "150",
-        "InId": [
-          "CAVEPROD3"
-        ],
-        "InQty": [
-          "1"
-        ]
-      },
-      {
         "Name": "Requested Operation: Ionise Mineral",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "1",
         "InId": [
           "CAVE1"
@@ -923,7 +1140,7 @@
       },
       {
         "Name": "Requested Operation: Efficient Cobalt Ionisation",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "5",
         "InId": [
           "CAVE1",
@@ -936,7 +1153,7 @@
       },
       {
         "Name": "Requested Operation: Efficient Cobalt Ionisation",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "6",
         "InId": [
           "CAVE2",
@@ -949,7 +1166,7 @@
       },
       {
         "Name": "Requested Operation: Bonded Cobalt Extraction",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "2",
         "InId": [
           "PLANT_CAVE",
@@ -962,7 +1179,7 @@
       },
       {
         "Name": "Requested Operation: Pugneum Washing",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "2",
         "InId": [
           "PLANT_CAVE",
@@ -975,7 +1192,7 @@
       },
       {
         "Name": "Requested Operation: Ionise Bulbs",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "2",
         "InId": [
           "PLANT_CAVE",
@@ -988,7 +1205,7 @@
       },
       {
         "Name": "Requested Operation: Ionise Bulbs",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "2",
         "InId": [
           "PLANT_CAVE",
