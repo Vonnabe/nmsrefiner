@@ -524,6 +524,28 @@
       "Symbol": "R",
       "Icon": "TEXTURES/UI/FRONTEND/ICONS/UPDATE3/REACTION.3.DDS",
       "Color": "F3A922"
+    },
+    "CRYSTALSUL": {
+      "Name": "Crystal Sulphide",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/UPDATE3/REACTION.3.DDS",
+      "Color": "F3A922"
+    },
+    "CRYSTALHEL": {
+      "Name": "Crystallised Helium",
+      "Symbol": "He",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/UPDATE3/REACTION.3.DDS",
+      "Color": "F3A922"
+    },
+    "PURPLE2": {
+      "Name": "Quartzite",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/UPDATE3/REACTION.3.DDS",
+      "Color": "F3A922"
+    },
+    "EX_PURPLE": {
+      "Name": "Activated Quartzite",
+      "Symbol": "Qu",
+      "Icon": "TEXTURES/UI/FRONTEND/ICONS/UPDATE3/REACTION.3.DDS",
+      "Color": "F3A922"
     }
   },
   "recipes": {
@@ -1219,19 +1241,8 @@
     ],
     "WATER2": [
       {
-        "Name": "Requested Operation: Chloride De-latticing",
-        "Time": "200",
-        "OutQty": "150",
-        "InId": [
-          "WATERPROD3"
-        ],
-        "InQty": [
-          "1"
-        ]
-      },
-      {
         "Name": "Requested Operation: Concentrate Salt",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "1",
         "InId": [
           "WATER1"
@@ -1242,7 +1253,7 @@
       },
       {
         "Name": "Requested Operation: Efficient Salt Evaporation",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "5",
         "InId": [
           "WATER1",
@@ -1255,7 +1266,7 @@
       },
       {
         "Name": "Requested Operation: Chlorine Expansion",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "6",
         "InId": [
           "WATER2",
@@ -1268,7 +1279,7 @@
       },
       {
         "Name": "Requested Operation: Bonded Chlorine Extraction",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "2",
         "InId": [
           "PLANT_WATER",
@@ -1281,7 +1292,7 @@
       },
       {
         "Name": "Requested Operation: Pugneum Washing",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "2",
         "InId": [
           "PLANT_WATER",
@@ -1294,7 +1305,7 @@
       },
       {
         "Name": "Requested Operation: Dissolve Natural Salts",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "2",
         "InId": [
           "PLANT_WATER",
@@ -1307,7 +1318,7 @@
       },
       {
         "Name": "Requested Operation: Dissolve Natural Salts",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "2",
         "InId": [
           "PLANT_WATER",
@@ -1321,11 +1332,11 @@
     ],
     "CATALYST2": [
       {
-        "Name": "Requested Operation: Sodium Stabilisation",
-        "Time": "200",
-        "OutQty": "150",
+        "Name": "Requested Operation: Sulphur Release",
+        "Time": "0.36",
+        "OutQty": "50",
         "InId": [
-          "CATAPROD3"
+          "CRYSTALSUL"
         ],
         "InQty": [
           "1"
@@ -1333,7 +1344,7 @@
       },
       {
         "Name": "Requested Operation: Process Sodium",
-        "Time": "100",
+        "Time": "0.4",
         "OutQty": "1",
         "InId": [
           "CATALYST1"
@@ -1344,7 +1355,7 @@
       },
       {
         "Name": "Requested Operation: Oxygenate Sodium",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "1",
         "InId": [
           "CATALYST1",
@@ -1357,7 +1368,7 @@
       },
       {
         "Name": "Requested Operation: Oxygenate Sodium",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "2",
         "InId": [
           "CATALYST2",
@@ -1370,7 +1381,7 @@
       },
       {
         "Name": "Requested Operation: Catalyse Carbon",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "1",
         "InId": [
           "FUEL1",
@@ -1383,7 +1394,7 @@
       },
       {
         "Name": "Requested Operation: Catalyse Carbon",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "2",
         "InId": [
           "FUEL2",
@@ -1396,20 +1407,7 @@
       },
       {
         "Name": "Requested Operation: Sentinel Catalysation",
-        "Time": "90",
-        "OutQty": "1",
-        "InId": [
-          "CATALYST1",
-          "ROBOT1"
-        ],
-        "InQty": [
-          "1",
-          "1"
-        ]
-      },
-      {
-        "Name": "Requested Operation: Sentinel Catalysation",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "3",
         "InId": [
           "CATALYST2",
@@ -1422,7 +1420,7 @@
       },
       {
         "Name": "Requested Operation: Gas Catalysation",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "1",
         "InId": [
           "GAS3",
@@ -1434,21 +1432,8 @@
         ]
       },
       {
-        "Name": "Requested Operation: Gas Catalysation",
-        "Time": "90",
-        "OutQty": "2",
-        "InId": [
-          "GAS3",
-          "CATALYST2"
-        ],
-        "InQty": [
-          "1",
-          "1"
-        ]
-      },
-      {
         "Name": "Requested Operation: Harness Organic Nitrogren",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "2",
         "InId": [
           "PLANT_CAVE",
@@ -1461,7 +1446,7 @@
       },
       {
         "Name": "Requested Operation: Harness Organic Nitrogren",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "2",
         "InId": [
           "PLANT_WATER",
@@ -1474,7 +1459,7 @@
       },
       {
         "Name": "Requested Operation: Feed Microbes",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "2",
         "InId": [
           "PLANT_POOP",
@@ -1487,7 +1472,7 @@
       },
       {
         "Name": "Requested Operation: Harness Organic Nitrogren",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "2",
         "InId": [
           "PLANT_CAVE",
@@ -1500,7 +1485,7 @@
       },
       {
         "Name": "Requested Operation: Harness Organic Nitrogren",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "2",
         "InId": [
           "PLANT_WATER",
@@ -1513,7 +1498,7 @@
       },
       {
         "Name": "Requested Operation: Feed Microbes",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "2",
         "InId": [
           "PLANT_POOP",
@@ -1526,7 +1511,7 @@
       },
       {
         "Name": "Requested Operation: Gas Catalysation",
-        "Time": "120",
+        "Time": "0.48",
         "OutQty": "1",
         "InId": [
           "GAS3",
@@ -1552,7 +1537,7 @@
       },
       {
         "Name": "Requested Operation: Gas Catalysation",
-        "Time": "120",
+        "Time": "0.48",
         "OutQty": "3",
         "InId": [
           "GAS3",
@@ -1562,23 +1547,133 @@
           "1",
           "1"
         ]
-      }
-    ],
-    "OXYGEN": [
+      },
       {
-        "Name": "Requested Operation: Oxygen Decompression",
-        "Time": "200",
-        "OutQty": "150",
+        "Name": "Requested Operation: Gas Catalysation",
+        "Time": "0.48",
+        "OutQty": "1",
         "InId": [
-          "OXYPROD3"
+          "GAS4",
+          "LAND1"
         ],
         "InQty": [
+          "1",
           "1"
         ]
       },
       {
+        "Name": "Requested Operation: Gas Catalysation",
+        "Time": "120",
+        "OutQty": "2",
+        "InId": [
+          "GAS4",
+          "LAND2"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Gas Catalysation",
+        "Time": "0.48",
+        "OutQty": "3",
+        "InId": [
+          "GAS4",
+          "LAND3"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Gas Catalysation",
+        "Time": "0.36",
+        "OutQty": "2",
+        "InId": [
+          "GAS3",
+          "CATALYST2"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Gas Catalysation",
+        "Time": "0.36",
+        "OutQty": "2",
+        "InId": [
+          "GAS4",
+          "CATALYST2"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Sentinel Catalysation",
+        "Time": "0.36",
+        "OutQty": "1",
+        "InId": [
+          "CATALYST1",
+          "ROBOT1"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Gas Catalysation",
+        "Time": "0.36",
+        "OutQty": "1",
+        "InId": [
+          "GAS4",
+          "CATALYST1"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Loosen Bonds",
+        "Time": "0.36",
+        "OutQty": "2",
+        "InId": [
+          "EX_PURPLE",
+          "CRYSTALHEL",
+          "GAS4"
+        ],
+        "InQty": [
+          "1",
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Loosen Bonds",
+        "Time": "0.36",
+        "OutQty": "2",
+        "InId": [
+          "EX_PURPLE",
+          "LITHIUM01",
+          "GAS4"
+        ],
+        "InQty": [
+          "1",
+          "1",
+          "1"
+        ]
+      }
+    ],
+    "OXYGEN": [
+      {
         "Name": "Requested Operation: Extract Micro-Bubbles",
-        "Time": "60",
+        "Time": "0.24",
         "OutQty": "1",
         "InId": [
           "PLANT_WATER"
@@ -1589,7 +1684,7 @@
       },
       {
         "Name": "Requested Operation: Release Captured Oxygen",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "2",
         "InId": [
           "PLANT_WATER",
@@ -1602,7 +1697,7 @@
       },
       {
         "Name": "Requested Operation: Release Captured Oxygen",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "2",
         "InId": [
           "PLANT_WATER",
@@ -1615,7 +1710,7 @@
       },
       {
         "Name": "Requested Operation: Artificial Photosynthesis",
-        "Time": "900",
+        "Time": "3.6",
         "OutQty": "10",
         "InId": [
           "PLANT_TOXIC",
@@ -1630,7 +1725,7 @@
       },
       {
         "Name": "Requested Operation: Artificial Photosynthesis",
-        "Time": "900",
+        "Time": "3.6",
         "OutQty": "10",
         "InId": [
           "PLANT_SNOW",
@@ -1645,7 +1740,7 @@
       },
       {
         "Name": "Requested Operation: Artificial Photosynthesis",
-        "Time": "900",
+        "Time": "3.6",
         "OutQty": "10",
         "InId": [
           "PLANT_DUST",
@@ -1660,7 +1755,7 @@
       },
       {
         "Name": "Requested Operation: Artificial Photosynthesis",
-        "Time": "900",
+        "Time": "3.6",
         "OutQty": "10",
         "InId": [
           "PLANT_HOT",
@@ -1675,7 +1770,7 @@
       },
       {
         "Name": "Requested Operation: Artificial Photosynthesis",
-        "Time": "900",
+        "Time": "3.6",
         "OutQty": "10",
         "InId": [
           "PLANT_RADIO",
@@ -1690,7 +1785,7 @@
       },
       {
         "Name": "Requested Operation: Artificial Photosynthesis",
-        "Time": "900",
+        "Time": "3.6",
         "OutQty": "10",
         "InId": [
           "PLANT_LUSH",
@@ -1707,8 +1802,8 @@
     "LAUNCHSUB": [
       {
         "Name": "Requested Operation: Di-hydrogen Cycling",
-        "Time": "100",
-        "OutQty": "50",
+        "Time": "4",
+        "OutQty": "40",
         "InId": [
           "JELLY"
         ],
@@ -1718,7 +1813,7 @@
       },
       {
         "Name": "Requested Operation: Tritium Cycling",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "1",
         "InId": [
           "ROCKETSUB"
@@ -1731,7 +1826,7 @@
     "CAVE1": [
       {
         "Name": "Requested Operation: Deionise Mineral",
-        "Time": "30",
+        "Time": "0.12",
         "OutQty": "2",
         "InId": [
           "CAVE2"
@@ -1744,7 +1839,7 @@
     "CATALYST1": [
       {
         "Name": "Requested Operation: Free Sodium",
-        "Time": "60",
+        "Time": "0.24",
         "OutQty": "2",
         "InId": [
           "CATALYST2"
@@ -1755,7 +1850,7 @@
       },
       {
         "Name": "Requested Operation: Extract Organic Sodium",
-        "Time": "60",
+        "Time": "0.24",
         "OutQty": "1",
         "InId": [
           "PLANT_CAVE"
@@ -1766,7 +1861,7 @@
       },
       {
         "Name": "Requested Operation: Extract Organic Sodium",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "2",
         "InId": [
           "PLANT_CAVE",
@@ -1779,7 +1874,7 @@
       },
       {
         "Name": "Requested Operation: Extract Organic Sodium",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "2",
         "InId": [
           "PLANT_CAVE",
@@ -1794,7 +1889,7 @@
     "LAND3": [
       {
         "Name": "Requested Operation: Magnetise Metal",
-        "Time": "60",
+        "Time": "0.24",
         "OutQty": "1",
         "InId": [
           "LAND2"
@@ -1805,7 +1900,7 @@
       },
       {
         "Name": "Requested Operation: Carbonise Metal",
-        "Time": "60",
+        "Time": "0.24",
         "OutQty": "1",
         "InId": [
           "LAND1",
@@ -1818,7 +1913,7 @@
       },
       {
         "Name": "Requested Operation: Carbonise Metal",
-        "Time": "60",
+        "Time": "0.24",
         "OutQty": "2",
         "InId": [
           "LAND1",
@@ -1831,7 +1926,7 @@
       },
       {
         "Name": "Requested Operation: Carbonise Metal",
-        "Time": "60",
+        "Time": "0.24",
         "OutQty": "2",
         "InId": [
           "LAND2",
@@ -1844,7 +1939,7 @@
       },
       {
         "Name": "Requested Operation: Carbonise Metal",
-        "Time": "60",
+        "Time": "0.24",
         "OutQty": "3",
         "InId": [
           "LAND2",
@@ -1857,7 +1952,7 @@
       },
       {
         "Name": "Requested Operation: Matter Expansion",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "3",
         "InId": [
           "LAND2",
@@ -1870,7 +1965,7 @@
       },
       {
         "Name": "Requested Operation: Matter Expansion",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "4",
         "InId": [
           "LAND3",
@@ -1883,7 +1978,7 @@
       },
       {
         "Name": "Requested Operation: Mineral Alchemy",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "10",
         "InId": [
           "ASTEROID3",
@@ -1896,7 +1991,7 @@
       },
       {
         "Name": "Requested Operation: Stellar / Metal Fusion",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "4",
         "InId": [
           "BLUE2",
@@ -1909,7 +2004,7 @@
       },
       {
         "Name": "Requested Operation: Stellar / Metal Fusion",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "2",
         "InId": [
           "RED2",
@@ -1922,7 +2017,7 @@
       },
       {
         "Name": "Requested Operation: Stellar / Metal Fusion",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "3",
         "InId": [
           "GREEN2",
@@ -1935,7 +2030,7 @@
       },
       {
         "Name": "Requested Operation: Stellar / Metal Fusion",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "1",
         "InId": [
           "YELLOW2",
@@ -1948,7 +2043,7 @@
       },
       {
         "Name": "Requested Operation: Stellar / Metal Fusion",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "4",
         "InId": [
           "EX_RED",
@@ -1961,7 +2056,7 @@
       },
       {
         "Name": "Requested Operation: Stellar / Metal Fusion",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "8",
         "InId": [
           "EX_BLUE",
@@ -1974,7 +2069,7 @@
       },
       {
         "Name": "Requested Operation: Stellar / Metal Fusion",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "6",
         "InId": [
           "EX_GREEN",
@@ -1987,7 +2082,7 @@
       },
       {
         "Name": "Requested Operation: Stellar / Metal Fusion",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "2",
         "InId": [
           "EX_YELLOW",
@@ -1999,8 +2094,34 @@
         ]
       },
       {
+        "Name": "Requested Operation: Stellar / Metal Fusion",
+        "Time": "0.36",
+        "OutQty": "4",
+        "InId": [
+          "PURPLE2",
+          "LAND1"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Stellar / Metal Fusion",
+        "Time": "0.36",
+        "OutQty": "8",
+        "InId": [
+          "EX_PURPLE",
+          "LAND1"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
         "Name": "Requested Operation: Deep Metal Compression",
-        "Time": "120",
+        "Time": "0.48",
         "OutQty": "5",
         "InId": [
           "LAND1",
@@ -2015,7 +2136,7 @@
       },
       {
         "Name": "Requested Operation: Deep Metal Compression",
-        "Time": "120",
+        "Time": "0.48",
         "OutQty": "8",
         "InId": [
           "LAND1",
@@ -2030,7 +2151,7 @@
       },
       {
         "Name": "Requested Operation: Deep Metal Compression",
-        "Time": "120",
+        "Time": "0.48",
         "OutQty": "12",
         "InId": [
           "LAND1",
@@ -2047,7 +2168,7 @@
     "STELLAR2": [
       {
         "Name": "Requested Operation: Extract Chromatic Material",
-        "Time": "70",
+        "Time": "0.28",
         "OutQty": "1",
         "InId": [
           "RED2"
@@ -2058,7 +2179,7 @@
       },
       {
         "Name": "Requested Operation: Extract Chromatic Material",
-        "Time": "25",
+        "Time": "0.1",
         "OutQty": "4",
         "InId": [
           "BLUE2"
@@ -2069,7 +2190,7 @@
       },
       {
         "Name": "Requested Operation: Extract Chromatic Material",
-        "Time": "40",
+        "Time": "0.16",
         "OutQty": "3",
         "InId": [
           "GREEN2"
@@ -2080,7 +2201,7 @@
       },
       {
         "Name": "Requested Operation: Extract Chromatic Material",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "1",
         "InId": [
           "YELLOW2"
@@ -2091,7 +2212,18 @@
       },
       {
         "Name": "Requested Operation: Extract Chromatic Material",
-        "Time": "50",
+        "Time": "0.1",
+        "OutQty": "4",
+        "InId": [
+          "PURPLE2"
+        ],
+        "InQty": [
+          "2"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Extract Chromatic Material",
+        "Time": "0.2",
         "OutQty": "2",
         "InId": [
           "EX_RED"
@@ -2102,7 +2234,7 @@
       },
       {
         "Name": "Requested Operation: Extract Chromatic Material",
-        "Time": "30",
+        "Time": "0.12",
         "OutQty": "4",
         "InId": [
           "EX_BLUE"
@@ -2113,7 +2245,7 @@
       },
       {
         "Name": "Requested Operation: Extract Chromatic Material",
-        "Time": "40",
+        "Time": "0.16",
         "OutQty": "3",
         "InId": [
           "EX_GREEN"
@@ -2124,7 +2256,7 @@
       },
       {
         "Name": "Requested Operation: Extract Chromatic Material",
-        "Time": "60",
+        "Time": "0.24",
         "OutQty": "1",
         "InId": [
           "EX_YELLOW"
@@ -2134,8 +2266,19 @@
         ]
       },
       {
+        "Name": "Requested Operation: Extract Chromatic Material",
+        "Time": "0.12",
+        "OutQty": "4",
+        "InId": [
+          "EX_PURPLE"
+        ],
+        "InQty": [
+          "1"
+        ]
+      },
+      {
         "Name": "Requested Operation: Chromatic Metal Fusion",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "2",
         "InId": [
           "RED2",
@@ -2148,7 +2291,7 @@
       },
       {
         "Name": "Requested Operation: Chromatic Metal Fusion",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "3",
         "InId": [
           "GREEN2",
@@ -2161,7 +2304,7 @@
       },
       {
         "Name": "Requested Operation: Chromatic Metal Fusion",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "1",
         "InId": [
           "YELLOW2",
@@ -2174,7 +2317,7 @@
       },
       {
         "Name": "Requested Operation: Chromatic Metal Fusion",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "4",
         "InId": [
           "BLUE2",
@@ -2187,7 +2330,20 @@
       },
       {
         "Name": "Requested Operation: Chromatic Metal Fusion",
-        "Time": "90",
+        "Time": "0.36",
+        "OutQty": "4",
+        "InId": [
+          "PURPLE2",
+          "LAND2"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Chromatic Metal Fusion",
+        "Time": "0.36",
         "OutQty": "4",
         "InId": [
           "EX_RED",
@@ -2200,7 +2356,7 @@
       },
       {
         "Name": "Requested Operation: Chromatic Metal Fusion",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "8",
         "InId": [
           "EX_BLUE",
@@ -2213,7 +2369,7 @@
       },
       {
         "Name": "Requested Operation: Chromatic Metal Fusion",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "6",
         "InId": [
           "EX_GREEN",
@@ -2226,7 +2382,7 @@
       },
       {
         "Name": "Requested Operation: Chromatic Metal Fusion",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "2",
         "InId": [
           "EX_YELLOW",
@@ -2236,12 +2392,100 @@
           "1",
           "1"
         ]
+      },
+      {
+        "Name": "Requested Operation: Chromatic Metal Fusion",
+        "Time": "0.36",
+        "OutQty": "8",
+        "InId": [
+          "EX_PURPLE",
+          "LAND2"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Chromatic Stellar Fusion",
+        "Time": "4.8",
+        "OutQty": "5",
+        "InId": [
+          "ASTEROID1",
+          "ASTEROID2",
+          "YELLOW2"
+        ],
+        "InQty": [
+          "1",
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Chromatic Stellar Fusion",
+        "Time": "4.8",
+        "OutQty": "10",
+        "InId": [
+          "ASTEROID1",
+          "ASTEROID2",
+          "RED2"
+        ],
+        "InQty": [
+          "1",
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Chromatic Stellar Fusion",
+        "Time": "4.8",
+        "OutQty": "20",
+        "InId": [
+          "ASTEROID1",
+          "ASTEROID2",
+          "GREEN2"
+        ],
+        "InQty": [
+          "1",
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Chromatic Stellar Fusion",
+        "Time": "4.8",
+        "OutQty": "30",
+        "InId": [
+          "ASTEROID1",
+          "ASTEROID2",
+          "PURPLE2"
+        ],
+        "InQty": [
+          "1",
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Chromatic Stellar Fusion",
+        "Time": "4.8",
+        "OutQty": "30",
+        "InId": [
+          "ASTEROID1",
+          "ASTEROID2",
+          "BLUE2"
+        ],
+        "InQty": [
+          "1",
+          "1",
+          "1"
+        ]
       }
     ],
     "LAND1": [
       {
         "Name": "Requested Operation: Ferrite Dust Extraction",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "1",
         "InId": [
           "LUSH1"
@@ -2252,7 +2496,7 @@
       },
       {
         "Name": "Requested Operation: Ferrite Dust Extraction",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "1",
         "InId": [
           "DUSTY1"
@@ -2263,7 +2507,7 @@
       },
       {
         "Name": "Requested Operation: Ferrite Dust Extraction",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "1",
         "InId": [
           "TOXIC1"
@@ -2274,7 +2518,7 @@
       },
       {
         "Name": "Requested Operation: Ferrite Dust Extraction",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "1",
         "InId": [
           "RADIO1"
@@ -2285,7 +2529,7 @@
       },
       {
         "Name": "Requested Operation: Ferrite Dust Extraction",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "1",
         "InId": [
           "COLD1"
@@ -2296,7 +2540,7 @@
       },
       {
         "Name": "Requested Operation: Ferrite Dust Extraction",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "1",
         "InId": [
           "HOT1"
@@ -2306,14 +2550,36 @@
         ]
       },
       {
-        "Name": "Requested Operation: Recycle Waste Materials",
-        "Time": "150",
+        "Name": "Requested Operation: Ferrite Dust Extraction",
+        "Time": "0.36",
         "OutQty": "1",
+        "InId": [
+          "CRYSTALHEL"
+        ],
+        "InQty": [
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Ferrite Dust Extraction",
+        "Time": "0.36",
+        "OutQty": "1",
+        "InId": [
+          "LITHIUM01"
+        ],
+        "InQty": [
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Recycle Waste Materials",
+        "Time": "0.64",
+        "OutQty": "2",
         "InId": [
           "SPACEGUNK3"
         ],
         "InQty": [
-          "5"
+          "1"
         ]
       }
     ],
