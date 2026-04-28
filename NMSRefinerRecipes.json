@@ -295,7 +295,7 @@
       "Color": "5B6E34"
     },
     "SPACEGUNK2": {
-      "Name": "Runaway Mold",
+      "Name": "Runaway Mould",
       "Symbol": "Jn",
       "Icon": "TEXTURES/UI/FRONTEND/ICONS/UPDATE3/SPACEGUNK.2.DDS",
       "Color": "5B6E34"
@@ -567,8 +567,8 @@
   "recipes": {
     "FARMPROD3": [
       {
-        "Name": "Requested Operation: Extreme Polishing",
-        "Time": "60",
+        "Name": "Requested Operation: Silicate Forging",
+        "Time": "5",
         "OutQty": "1",
         "InId": [
           "SILICATEP"
@@ -576,12 +576,36 @@
         "InQty": [
           "40"
         ]
+      },
+      {
+        "Name": "Requested Operation: Polish Crystals",
+        "Time": "30",
+        "OutQty": "1",
+        "InId": [
+          "PLANT_SNOW"
+        ],
+        "InQty": [
+          "40"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Salt Crystal Polishing",
+        "Time": "10",
+        "OutQty": "1",
+        "InId": [
+          "WATER1",
+          "WATER2"
+        ],
+        "InQty": [
+          "50",
+          "50"
+        ]
       }
     ],
     "DUSTY1": [
       {
         "Name": "Requested Operation: Metal Restructuring",
-        "Time": "60",
+        "Time": "0.24",
         "OutQty": "1",
         "InId": [
           "ASTEROID2"
@@ -592,7 +616,7 @@
       },
       {
         "Name": "Requested Operation: Mineral Alchemy",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "2",
         "InId": [
           "ASTEROID2",
@@ -605,7 +629,7 @@
       },
       {
         "Name": "Requested Operation: Environmental Element Transfer",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "1",
         "InId": [
           "RADIO1",
@@ -618,7 +642,7 @@
       },
       {
         "Name": "Requested Operation: Environmental Element Transfer",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "1",
         "InId": [
           "RADIO1",
@@ -631,7 +655,7 @@
       },
       {
         "Name": "Requested Operation: Floral Titration",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "1",
         "InId": [
           "PLANT_DUST",
@@ -648,7 +672,7 @@
         "OutQty": "2",
         "InId": [
           "LITHIUM01",
-          "LAND2"
+          "LAND1"
         ],
         "InQty": [
           "1",
@@ -661,7 +685,20 @@
         "OutQty": "1",
         "InId": [
           "LITHIUM01",
-          "LAND1"
+          "LAND2"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Loosen Bonds",
+        "Time": "0.36",
+        "OutQty": "3",
+        "InId": [
+          "LITHIUM01",
+          "LAND3"
         ],
         "InQty": [
           "1",
@@ -2779,6 +2816,23 @@
         ]
       }
     ],
+    "GAS4": [
+      {
+        "Name": "Requested Operation: Organic Fusion",
+        "Time": "0.16",
+        "OutQty": "1",
+        "InId": [
+          "GAS1",
+          "GAS2",
+          "GAS3"
+        ],
+        "InQty": [
+          "3",
+          "3",
+          "3"
+        ]
+      }
+    ],
     "SPACEGUNK5": [
       {
         "Name": "Requested Operation: Recycle Waste Materials",
@@ -3320,7 +3374,7 @@
     "TOXIC1": [
       {
         "Name": "Requested Operation: Organic Fusion",
-        "Time": "40",
+        "Time": "0.16",
         "OutQty": "1",
         "InId": [
           "GAS3",
@@ -3333,7 +3387,7 @@
       },
       {
         "Name": "Requested Operation: Environmental Element Transfer",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "1",
         "InId": [
           "LUSH1",
@@ -3346,7 +3400,7 @@
       },
       {
         "Name": "Requested Operation: Environmental Element Transfer",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "1",
         "InId": [
           "LUSH1",
@@ -3359,7 +3413,7 @@
       },
       {
         "Name": "Requested Operation: Floral Titration",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "1",
         "InId": [
           "PLANT_TOXIC",
@@ -3374,11 +3428,24 @@
     "LAUNCHSUB2": [
       {
         "Name": "Requested Operation: Di-hydrogen Cycling",
-        "Time": "60",
+        "Time": "0.24",
         "OutQty": "1",
         "InId": [
           "LAUNCHSUB",
           "ROCKETSUB"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Di-hydrogen Cycling",
+        "Time": "0.24",
+        "OutQty": "1",
+        "InId": [
+          "LAUNCHSUB",
+          "SILICATEP"
         ],
         "InQty": [
           "1",
@@ -3389,7 +3456,7 @@
     "SPACEGUNK3": [
       {
         "Name": "Requested Operation: Oxidise Metal",
-        "Time": "100",
+        "Time": "0.4",
         "OutQty": "2",
         "InId": [
           "LAND2",
@@ -3402,7 +3469,7 @@
       },
       {
         "Name": "Requested Operation: Oxidise Metal",
-        "Time": "100",
+        "Time": "0.4",
         "OutQty": "1",
         "InId": [
           "LAND1",
@@ -3417,7 +3484,7 @@
     "COLD1": [
       {
         "Name": "Requested Operation: Advanced Carbon Processing",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "1",
         "InId": [
           "FUEL1",
@@ -3430,7 +3497,7 @@
       },
       {
         "Name": "Requested Operation: Advanced Carbon Processing",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "2",
         "InId": [
           "FUEL2",
@@ -3443,7 +3510,7 @@
       },
       {
         "Name": "Requested Operation: Environmental Element Transfer",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "1",
         "InId": [
           "TOXIC1",
@@ -3456,7 +3523,7 @@
       },
       {
         "Name": "Requested Operation: Environmental Element Transfer",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "1",
         "InId": [
           "TOXIC1",
@@ -3469,7 +3536,7 @@
       },
       {
         "Name": "Requested Operation: Floral Titration",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "1",
         "InId": [
           "PLANT_SNOW",
@@ -3484,7 +3551,7 @@
     "PLANT_CAVE": [
       {
         "Name": "Requested Operation: Fertiliser Synthesis",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "3",
         "InId": [
           "CATALYST1",
@@ -3497,7 +3564,7 @@
       },
       {
         "Name": "Requested Operation: Fertiliser Synthesis",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "4",
         "InId": [
           "CATALYST2",
@@ -3510,7 +3577,7 @@
       },
       {
         "Name": "Requested Operation: Encourage Growth",
-        "Time": "60",
+        "Time": "0.24",
         "OutQty": "1",
         "InId": [
           "CAVE1",
@@ -3525,8 +3592,8 @@
     "RED2": [
       {
         "Name": "Requested Operation: Chromatic Expansion",
-        "Time": "90",
-        "OutQty": "4",
+        "Time": "0.36",
+        "OutQty": "2",
         "InId": [
           "RED2",
           "STELLAR2"
@@ -3540,8 +3607,8 @@
     "BLUE2": [
       {
         "Name": "Requested Operation: Chromatic Expansion",
-        "Time": "90",
-        "OutQty": "4",
+        "Time": "0.36",
+        "OutQty": "2",
         "InId": [
           "BLUE2",
           "STELLAR2"
@@ -3555,8 +3622,8 @@
     "GREEN2": [
       {
         "Name": "Requested Operation: Chromatic Expansion",
-        "Time": "90",
-        "OutQty": "4",
+        "Time": "0.36",
+        "OutQty": "2",
         "InId": [
           "GREEN2",
           "STELLAR2"
@@ -3570,8 +3637,8 @@
     "YELLOW2": [
       {
         "Name": "Requested Operation: Chromatic Expansion",
-        "Time": "90",
-        "OutQty": "4",
+        "Time": "0.36",
+        "OutQty": "2",
         "InId": [
           "YELLOW2",
           "STELLAR2"
@@ -3582,10 +3649,126 @@
         ]
       }
     ],
+    "PURPLE2": [
+      {
+        "Name": "Requested Operation: Chromatic Alchemy",
+        "Time": "0.24",
+        "OutQty": "1",
+        "InId": [
+          "EX_PURPLE",
+          "FUEL1"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Chromatic Expansion",
+        "Time": "0.36",
+        "OutQty": "2",
+        "InId": [
+          "PURPLE2",
+          "STELLAR2"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      }
+    ],
+    "EX_PURPLE": [
+      {
+        "Name": "Requested Operation: Loosen Bonds",
+        "Time": "0.36",
+        "OutQty": "1",
+        "InId": [
+          "PURPLE2",
+          "CRYSTALHEL",
+          "GAS4"
+        ],
+        "InQty": [
+          "1",
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Loosen Bonds",
+        "Time": "0.36",
+        "OutQty": "1",
+        "InId": [
+          "PURPLE2",
+          "LITHIUM01",
+          "GAS4"
+        ],
+        "InQty": [
+          "1",
+          "1",
+          "1"
+        ]
+      }
+    ],
+    "LITHIUM01": [
+      {
+        "Name": "Requested Operation: Environmental Element Transfer",
+        "Time": "0.36",
+        "OutQty": "1",
+        "InId": [
+          "PURPLE2",
+          "CRYSTALHEL"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Environmental Element Transfer",
+        "Time": "0.36",
+        "OutQty": "2",
+        "InId": [
+          "EX_PURPLE",
+          "CRYSTALHEL"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      }
+    ],
+    "CRYSTALHEL": [
+      {
+        "Name": "Requested Operation: Environmental Element Transfer",
+        "Time": "0.36",
+        "OutQty": "1",
+        "InId": [
+          "PURPLE2",
+          "LITHIUM01"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Environmental Element Transfer",
+        "Time": "0.36",
+        "OutQty": "2",
+        "InId": [
+          "EX_PURPLE",
+          "LITHIUM01"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      }
+    ],
     "PLANT_LUSH": [
       {
         "Name": "Requested Operation: Organic Expansion",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "2",
         "InId": [
           "LUSH1",
@@ -3598,7 +3781,7 @@
       },
       {
         "Name": "Requested Operation: Encourage Growth",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "1",
         "InId": [
           "LUSH1",
@@ -3611,11 +3794,24 @@
       },
       {
         "Name": "Requested Operation: Encourage Growth",
-        "Time": "60",
+        "Time": "0.24",
         "OutQty": "1",
         "InId": [
           "LUSH1",
           "GAS3"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Organic Expansion",
+        "Time": "0.36",
+        "OutQty": "1",
+        "InId": [
+          "LUSH1",
+          "GAS4"
         ],
         "InQty": [
           "1",
@@ -3626,7 +3822,7 @@
     "PLANT_DUST": [
       {
         "Name": "Requested Operation: Organic Expansion",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "2",
         "InId": [
           "DUSTY1",
@@ -3639,7 +3835,7 @@
       },
       {
         "Name": "Requested Operation: Encourage Growth",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "1",
         "InId": [
           "DUSTY1",
@@ -3652,11 +3848,24 @@
       },
       {
         "Name": "Requested Operation: Encourage Growth",
-        "Time": "60",
+        "Time": "0.24",
         "OutQty": "1",
         "InId": [
           "DUSTY1",
           "GAS1"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Organic Expansion",
+        "Time": "0.36",
+        "OutQty": "1",
+        "InId": [
+          "DUSTY1",
+          "GAS4"
         ],
         "InQty": [
           "1",
@@ -3667,7 +3876,7 @@
     "PLANT_TOXIC": [
       {
         "Name": "Requested Operation: Organic Expansion",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "2",
         "InId": [
           "TOXIC1",
@@ -3680,7 +3889,7 @@
       },
       {
         "Name": "Requested Operation: Encourage Growth",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "1",
         "InId": [
           "TOXIC1",
@@ -3693,11 +3902,24 @@
       },
       {
         "Name": "Requested Operation: Encourage Growth",
-        "Time": "60",
+        "Time": "0.24",
         "OutQty": "1",
         "InId": [
           "TOXIC1",
           "GAS3"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Organic Expansion",
+        "Time": "0.36",
+        "OutQty": "1",
+        "InId": [
+          "TOXIC1",
+          "GAS4"
         ],
         "InQty": [
           "1",
@@ -3708,7 +3930,7 @@
     "PLANT_RADIO": [
       {
         "Name": "Requested Operation: Organic Expansion",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "2",
         "InId": [
           "RADIO1",
@@ -3721,7 +3943,7 @@
       },
       {
         "Name": "Requested Operation: Encourage Growth",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "1",
         "InId": [
           "RADIO1",
@@ -3734,11 +3956,24 @@
       },
       {
         "Name": "Requested Operation: Encourage Growth",
-        "Time": "60",
+        "Time": "0.24",
         "OutQty": "1",
         "InId": [
           "RADIO1",
           "GAS2"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Organic Expansion",
+        "Time": "0.36",
+        "OutQty": "1",
+        "InId": [
+          "RADIO1",
+          "GAS4"
         ],
         "InQty": [
           "1",
@@ -3749,7 +3984,7 @@
     "PLANT_SNOW": [
       {
         "Name": "Requested Operation: Organic Expansion",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "2",
         "InId": [
           "COLD1",
@@ -3762,7 +3997,7 @@
       },
       {
         "Name": "Requested Operation: Encourage Growth",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "1",
         "InId": [
           "COLD1",
@@ -3775,7 +4010,7 @@
       },
       {
         "Name": "Requested Operation: Encourage Growth",
-        "Time": "60",
+        "Time": "0.24",
         "OutQty": "1",
         "InId": [
           "COLD1",
@@ -3785,25 +4020,25 @@
           "1",
           "1"
         ]
-      }
-    ],
-    "LUSH1": [
+      },
       {
-        "Name": "Requested Operation: Mineral Alchemy",
-        "Time": "90",
-        "OutQty": "2",
+        "Name": "Requested Operation: Organic Expansion",
+        "Time": "0.36",
+        "OutQty": "1",
         "InId": [
-          "ASTEROID1",
-          "OXYGEN"
+          "COLD1",
+          "GAS4"
         ],
         "InQty": [
           "1",
           "1"
         ]
-      },
+      }
+    ],
+    "LUSH1": [
       {
         "Name": "Requested Operation: Environmental Element Transfer",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "1",
         "InId": [
           "DUSTY1",
@@ -3816,7 +4051,7 @@
       },
       {
         "Name": "Requested Operation: Environmental Element Transfer",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "1",
         "InId": [
           "DUSTY1",
@@ -3829,7 +4064,7 @@
       },
       {
         "Name": "Requested Operation: Floral Titration",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "1",
         "InId": [
           "PLANT_LUSH",
@@ -3842,7 +4077,7 @@
       },
       {
         "Name": "Requested Operation: Loosen Bonds",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "1",
         "InId": [
           "GAS1",
@@ -3855,7 +4090,7 @@
       },
       {
         "Name": "Requested Operation: Loosen Bonds",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "2",
         "InId": [
           "GAS1",
@@ -3867,8 +4102,21 @@
         ]
       },
       {
+        "Name": "Requested Operation: Mineral Alchemy",
+        "Time": "0.36",
+        "OutQty": "2",
+        "InId": [
+          "ASTEROID1",
+          "OXYGEN"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
         "Name": "Requested Operation: Loosen Bonds",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "3",
         "InId": [
           "GAS1",
@@ -3883,7 +4131,7 @@
     "HOT1": [
       {
         "Name": "Requested Operation: Environmental Element Transfer",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "1",
         "InId": [
           "COLD1",
@@ -3896,7 +4144,7 @@
       },
       {
         "Name": "Requested Operation: Environmental Element Transfer",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "1",
         "InId": [
           "COLD1",
@@ -3909,7 +4157,7 @@
       },
       {
         "Name": "Requested Operation: Floral Titration",
-        "Time": "90",
+        "Time": "0.36",
         "OutQty": "1",
         "InId": [
           "PLANT_HOT",
@@ -3919,211 +4167,42 @@
           "2",
           "1"
         ]
-      }
-    ],
-    "FUELPROD3": [
-      {
-        "Name": "Requested Operation: Carbon Crystallisation",
-        "Time": "120",
-        "OutQty": "1",
-        "InId": [
-          "FUEL1",
-          "FUEL2"
-        ],
-        "InQty": [
-          "50",
-          "50"
-        ]
       },
       {
-        "Name": "Requested Operation: Carbon Crystallisation",
-        "Time": "200",
+        "Name": "Requested Operation: Organic Fusion",
+        "Time": "0.16",
         "OutQty": "1",
         "InId": [
-          "FUEL1",
-          "FUEL2",
-          "ROCKETSUB"
+          "GAS4",
+          "LAUNCHSUB"
         ],
         "InQty": [
-          "40",
-          "40",
-          "50"
-        ]
-      }
-    ],
-    "CATAPROD3": [
-      {
-        "Name": "Requested Operation: Sodium Destabilisation",
-        "Time": "120",
-        "OutQty": "1",
-        "InId": [
-          "CATALYST1",
-          "CATALYST2"
-        ],
-        "InQty": [
-          "50",
-          "50"
-        ]
-      },
-      {
-        "Name": "Requested Operation: Sodium Destabilisation",
-        "Time": "200",
-        "OutQty": "1",
-        "InId": [
-          "CATALYST1",
-          "CATALYST2",
-          "ROCKETSUB"
-        ],
-        "InQty": [
-          "40",
-          "40",
-          "50"
-        ]
-      }
-    ],
-    "WATERPROD3": [
-      {
-        "Name": "Requested Operation: Chlorine Latticing",
-        "Time": "120",
-        "OutQty": "1",
-        "InId": [
-          "WATER1",
-          "WATER2"
-        ],
-        "InQty": [
-          "50",
-          "50"
-        ]
-      },
-      {
-        "Name": "Requested Operation: Chlorine Latticing",
-        "Time": "200",
-        "OutQty": "1",
-        "InId": [
-          "WATER1",
-          "WATER2",
-          "ROCKETSUB"
-        ],
-        "InQty": [
-          "40",
-          "40",
-          "50"
-        ]
-      }
-    ],
-    "CAVEPROD3": [
-      {
-        "Name": "Requested Operation: Cobalt Supercharging",
-        "Time": "120",
-        "OutQty": "1",
-        "InId": [
-          "CAVE1",
-          "CAVE2"
-        ],
-        "InQty": [
-          "50",
-          "50"
-        ]
-      },
-      {
-        "Name": "Requested Operation: Cobalt Supercharging",
-        "Time": "200",
-        "OutQty": "1",
-        "InId": [
-          "CAVE1",
-          "CAVE2",
-          "ROCKETSUB"
-        ],
-        "InQty": [
-          "40",
-          "40",
-          "50"
-        ]
-      }
-    ],
-    "OXYPROD3": [
-      {
-        "Name": "Requested Operation: Oxygen Nucleation",
-        "Time": "200",
-        "OutQty": "1",
-        "InId": [
-          "OXYGEN",
-          "ROCKETSUB"
-        ],
-        "InQty": [
-          "100",
-          "50"
-        ]
-      },
-      {
-        "Name": "Requested Operation: Oxygen Nucleation",
-        "Time": "200",
-        "OutQty": "1",
-        "InId": [
-          "OXYGEN",
-          "RADIO1",
-          "ROCKETSUB"
-        ],
-        "InQty": [
-          "40",
-          "40",
-          "50"
-        ]
-      }
-    ],
-    "LANDPROD3": [
-      {
-        "Name": "Requested Operation: Rare Metal Detoxification",
-        "Time": "120",
-        "OutQty": "1",
-        "InId": [
-          "LAND3",
-          "OXYGEN"
-        ],
-        "InQty": [
-          "25",
-          "50"
-        ]
-      },
-      {
-        "Name": "Requested Operation: Rare Metal Fusion",
-        "Time": "120",
-        "OutQty": "1",
-        "InId": [
-          "LAND1",
-          "LAND2",
-          "LAND3"
-        ],
-        "InQty": [
-          "35",
-          "35",
-          "35"
-        ]
-      },
-      {
-        "Name": "Requested Operation: Rare Metal Fusion",
-        "Time": "200",
-        "OutQty": "1",
-        "InId": [
-          "OXYGEN",
-          "LAND3",
-          "ROCKETSUB"
-        ],
-        "InQty": [
-          "20",
-          "20",
-          "25"
+          "1",
+          "1"
         ]
       }
     ],
     "PLANT_WATER": [
       {
         "Name": "Requested Operation: Encourage Growth",
-        "Time": "60",
+        "Time": "0.24",
         "OutQty": "1",
         "InId": [
           "WATER1",
           "GAS3"
+        ],
+        "InQty": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "Name": "Requested Operation: Organic Expansion",
+        "Time": "0.36",
+        "OutQty": "1",
+        "InId": [
+          "GAS4",
+          "LITHIUM01"
         ],
         "InQty": [
           "1",
@@ -4134,7 +4213,7 @@
     "HYPERFUEL1": [
       {
         "Name": "Requested Operation: Antimatter Bypass",
-        "Time": "600",
+        "Time": "300",
         "OutQty": "1",
         "InId": [
           "FUEL2",
@@ -4149,7 +4228,7 @@
       },
       {
         "Name": "Requested Operation: Antimatter Bypass",
-        "Time": "600",
+        "Time": "300",
         "OutQty": "1",
         "InId": [
           "FUEL1",
@@ -4164,7 +4243,7 @@
       },
       {
         "Name": "Requested Operation: Antimatter Bypass",
-        "Time": "600",
+        "Time": "300",
         "OutQty": "1",
         "InId": [
           "FUEL2",
@@ -4181,7 +4260,7 @@
     "GRENFUEL1": [
       {
         "Name": "Requested Operation: Plasma Pressurisation",
-        "Time": "90",
+        "Time": "45",
         "OutQty": "1",
         "InId": [
           "OXYGEN",
@@ -4196,7 +4275,7 @@
       },
       {
         "Name": "Requested Operation: Plasma Pressurisation",
-        "Time": "90",
+        "Time": "45",
         "OutQty": "1",
         "InId": [
           "OXYGEN",
@@ -4211,7 +4290,7 @@
       },
       {
         "Name": "Requested Operation: Plasma Pressurisation",
-        "Time": "90",
+        "Time": "45",
         "OutQty": "1",
         "InId": [
           "OXYGEN",
@@ -4226,7 +4305,7 @@
       },
       {
         "Name": "Requested Operation: Plasma Pressurisation",
-        "Time": "90",
+        "Time": "45",
         "OutQty": "1",
         "InId": [
           "OXYGEN",
@@ -4243,7 +4322,7 @@
     "PRODFUEL2": [
       {
         "Name": "Requested Operation: Advanced Oxygen Capture",
-        "Time": "90",
+        "Time": "45",
         "OutQty": "1",
         "InId": [
           "OXYGEN",
@@ -4260,7 +4339,7 @@
     "LAUNCHFUEL": [
       {
         "Name": "Requested Operation: Di-hydrogen Capture",
-        "Time": "90",
+        "Time": "45",
         "OutQty": "1",
         "InId": [
           "LAUNCHSUB",
@@ -4275,7 +4354,7 @@
       },
       {
         "Name": "Requested Operation: Di-hydrogen Capture",
-        "Time": "90",
+        "Time": "45",
         "OutQty": "1",
         "InId": [
           "LAUNCHSUB",
@@ -4290,7 +4369,7 @@
       },
       {
         "Name": "Requested Operation: Di-hydrogen Capture",
-        "Time": "90",
+        "Time": "45",
         "OutQty": "1",
         "InId": [
           "LAUNCHSUB",
@@ -4307,7 +4386,7 @@
     "POWERCELL": [
       {
         "Name": "Requested Operation: Ion Capture",
-        "Time": "90",
+        "Time": "45",
         "OutQty": "1",
         "InId": [
           "LAND1",
@@ -4321,27 +4400,10 @@
         ]
       }
     ],
-    "POWERCELL2": [
-      {
-        "Name": "Requested Operation: Advanced Ion Capture",
-        "Time": "90",
-        "OutQty": "1",
-        "InId": [
-          "LAND2",
-          "CATALYST2",
-          "ASTEROID1"
-        ],
-        "InQty": [
-          "10",
-          "10",
-          "10"
-        ]
-      }
-    ],
     "ALLOY1": [
       {
         "Name": "Requested Operation: Alloy Latticing",
-        "Time": "90",
+        "Time": "45",
         "OutQty": "1",
         "InId": [
           "LUSH1",
@@ -4356,7 +4418,7 @@
       },
       {
         "Name": "Requested Operation: Alloy Latticing",
-        "Time": "90",
+        "Time": "45",
         "OutQty": "1",
         "InId": [
           "LUSH1",
@@ -4371,7 +4433,7 @@
       },
       {
         "Name": "Requested Operation: Alloy Latticing",
-        "Time": "90",
+        "Time": "45",
         "OutQty": "1",
         "InId": [
           "LUSH1",
@@ -4386,7 +4448,7 @@
       },
       {
         "Name": "Requested Operation: Alloy Latticing",
-        "Time": "90",
+        "Time": "45",
         "OutQty": "1",
         "InId": [
           "LUSH1",
@@ -4401,7 +4463,7 @@
       },
       {
         "Name": "Requested Operation: Alloy Latticing",
-        "Time": "90",
+        "Time": "45",
         "OutQty": "1",
         "InId": [
           "LUSH1",
@@ -4416,7 +4478,7 @@
       },
       {
         "Name": "Requested Operation: Alloy Latticing",
-        "Time": "90",
+        "Time": "45",
         "OutQty": "1",
         "InId": [
           "LUSH1",
@@ -4431,7 +4493,7 @@
       },
       {
         "Name": "Requested Operation: Alloy Latticing",
-        "Time": "90",
+        "Time": "45",
         "OutQty": "1",
         "InId": [
           "LUSH1",
@@ -4446,7 +4508,7 @@
       },
       {
         "Name": "Requested Operation: Alloy Latticing",
-        "Time": "90",
+        "Time": "45",
         "OutQty": "1",
         "InId": [
           "LUSH1",
@@ -4463,7 +4525,7 @@
     "ALLOY2": [
       {
         "Name": "Requested Operation: Alloy Latticing",
-        "Time": "90",
+        "Time": "45",
         "OutQty": "1",
         "InId": [
           "DUSTY1",
@@ -4478,7 +4540,7 @@
       },
       {
         "Name": "Requested Operation: Alloy Latticing",
-        "Time": "90",
+        "Time": "45",
         "OutQty": "1",
         "InId": [
           "DUSTY1",
@@ -4493,7 +4555,7 @@
       },
       {
         "Name": "Requested Operation: Alloy Latticing",
-        "Time": "90",
+        "Time": "45",
         "OutQty": "1",
         "InId": [
           "DUSTY1",
@@ -4508,7 +4570,7 @@
       },
       {
         "Name": "Requested Operation: Alloy Latticing",
-        "Time": "90",
+        "Time": "45",
         "OutQty": "1",
         "InId": [
           "DUSTY1",
@@ -4523,7 +4585,7 @@
       },
       {
         "Name": "Requested Operation: Alloy Latticing",
-        "Time": "90",
+        "Time": "45",
         "OutQty": "1",
         "InId": [
           "DUSTY1",
@@ -4538,7 +4600,7 @@
       },
       {
         "Name": "Requested Operation: Alloy Latticing",
-        "Time": "90",
+        "Time": "45",
         "OutQty": "1",
         "InId": [
           "DUSTY1",
@@ -4553,7 +4615,7 @@
       },
       {
         "Name": "Requested Operation: Alloy Latticing",
-        "Time": "90",
+        "Time": "45",
         "OutQty": "1",
         "InId": [
           "DUSTY1",
@@ -4568,7 +4630,7 @@
       },
       {
         "Name": "Requested Operation: Alloy Latticing",
-        "Time": "90",
+        "Time": "45",
         "OutQty": "1",
         "InId": [
           "DUSTY1",
@@ -4585,7 +4647,7 @@
     "ALLOY3": [
       {
         "Name": "Requested Operation: Alloy Latticing",
-        "Time": "90",
+        "Time": "45",
         "OutQty": "1",
         "InId": [
           "TOXIC1",
@@ -4600,7 +4662,7 @@
       },
       {
         "Name": "Requested Operation: Alloy Latticing",
-        "Time": "90",
+        "Time": "45",
         "OutQty": "1",
         "InId": [
           "TOXIC1",
@@ -4615,7 +4677,7 @@
       },
       {
         "Name": "Requested Operation: Alloy Latticing",
-        "Time": "90",
+        "Time": "45",
         "OutQty": "1",
         "InId": [
           "TOXIC1",
@@ -4630,7 +4692,7 @@
       },
       {
         "Name": "Requested Operation: Alloy Latticing",
-        "Time": "90",
+        "Time": "45",
         "OutQty": "1",
         "InId": [
           "TOXIC1",
@@ -4645,7 +4707,7 @@
       },
       {
         "Name": "Requested Operation: Alloy Latticing",
-        "Time": "90",
+        "Time": "45",
         "OutQty": "1",
         "InId": [
           "TOXIC1",
@@ -4660,7 +4722,7 @@
       },
       {
         "Name": "Requested Operation: Alloy Latticing",
-        "Time": "90",
+        "Time": "45",
         "OutQty": "1",
         "InId": [
           "TOXIC1",
@@ -4675,7 +4737,7 @@
       },
       {
         "Name": "Requested Operation: Alloy Latticing",
-        "Time": "90",
+        "Time": "45",
         "OutQty": "1",
         "InId": [
           "TOXIC1",
@@ -4690,7 +4752,7 @@
       },
       {
         "Name": "Requested Operation: Alloy Latticing",
-        "Time": "90",
+        "Time": "45",
         "OutQty": "1",
         "InId": [
           "TOXIC1",
@@ -4707,7 +4769,7 @@
     "ALLOY4": [
       {
         "Name": "Requested Operation: Alloy Latticing",
-        "Time": "90",
+        "Time": "45",
         "OutQty": "1",
         "InId": [
           "RADIO1",
@@ -4722,7 +4784,7 @@
       },
       {
         "Name": "Requested Operation: Alloy Latticing",
-        "Time": "90",
+        "Time": "45",
         "OutQty": "1",
         "InId": [
           "RADIO1",
@@ -4737,7 +4799,7 @@
       },
       {
         "Name": "Requested Operation: Alloy Latticing",
-        "Time": "90",
+        "Time": "45",
         "OutQty": "1",
         "InId": [
           "RADIO1",
@@ -4752,7 +4814,7 @@
       },
       {
         "Name": "Requested Operation: Alloy Latticing",
-        "Time": "90",
+        "Time": "45",
         "OutQty": "1",
         "InId": [
           "RADIO1",
@@ -4767,7 +4829,7 @@
       },
       {
         "Name": "Requested Operation: Alloy Latticing",
-        "Time": "90",
+        "Time": "45",
         "OutQty": "1",
         "InId": [
           "RADIO1",
@@ -4782,7 +4844,7 @@
       },
       {
         "Name": "Requested Operation: Alloy Latticing",
-        "Time": "90",
+        "Time": "45",
         "OutQty": "1",
         "InId": [
           "RADIO1",
@@ -4797,7 +4859,7 @@
       },
       {
         "Name": "Requested Operation: Alloy Latticing",
-        "Time": "90",
+        "Time": "45",
         "OutQty": "1",
         "InId": [
           "RADIO1",
@@ -4812,7 +4874,7 @@
       },
       {
         "Name": "Requested Operation: Alloy Latticing",
-        "Time": "90",
+        "Time": "45",
         "OutQty": "1",
         "InId": [
           "RADIO1",
@@ -4829,7 +4891,7 @@
     "ALLOY5": [
       {
         "Name": "Requested Operation: Alloy Latticing",
-        "Time": "90",
+        "Time": "45",
         "OutQty": "1",
         "InId": [
           "HOT1",
@@ -4844,7 +4906,7 @@
       },
       {
         "Name": "Requested Operation: Alloy Latticing",
-        "Time": "90",
+        "Time": "45",
         "OutQty": "1",
         "InId": [
           "HOT1",
@@ -4859,7 +4921,7 @@
       },
       {
         "Name": "Requested Operation: Alloy Latticing",
-        "Time": "90",
+        "Time": "45",
         "OutQty": "1",
         "InId": [
           "HOT1",
@@ -4874,7 +4936,7 @@
       },
       {
         "Name": "Requested Operation: Alloy Latticing",
-        "Time": "90",
+        "Time": "45",
         "OutQty": "1",
         "InId": [
           "HOT1",
@@ -4889,7 +4951,7 @@
       },
       {
         "Name": "Requested Operation: Alloy Latticing",
-        "Time": "90",
+        "Time": "45",
         "OutQty": "1",
         "InId": [
           "HOT1",
@@ -4904,7 +4966,7 @@
       },
       {
         "Name": "Requested Operation: Alloy Latticing",
-        "Time": "90",
+        "Time": "45",
         "OutQty": "1",
         "InId": [
           "HOT1",
@@ -4919,7 +4981,7 @@
       },
       {
         "Name": "Requested Operation: Alloy Latticing",
-        "Time": "90",
+        "Time": "45",
         "OutQty": "1",
         "InId": [
           "HOT1",
@@ -4934,7 +4996,7 @@
       },
       {
         "Name": "Requested Operation: Alloy Latticing",
-        "Time": "90",
+        "Time": "45",
         "OutQty": "1",
         "InId": [
           "HOT1",
@@ -4951,7 +5013,7 @@
     "ALLOY6": [
       {
         "Name": "Requested Operation: Alloy Latticing",
-        "Time": "90",
+        "Time": "45",
         "OutQty": "1",
         "InId": [
           "COLD1",
@@ -4966,7 +5028,7 @@
       },
       {
         "Name": "Requested Operation: Alloy Latticing",
-        "Time": "90",
+        "Time": "45",
         "OutQty": "1",
         "InId": [
           "COLD1",
@@ -4981,7 +5043,7 @@
       },
       {
         "Name": "Requested Operation: Alloy Latticing",
-        "Time": "90",
+        "Time": "45",
         "OutQty": "1",
         "InId": [
           "COLD1",
@@ -4996,7 +5058,7 @@
       },
       {
         "Name": "Requested Operation: Alloy Latticing",
-        "Time": "90",
+        "Time": "45",
         "OutQty": "1",
         "InId": [
           "COLD1",
@@ -5011,7 +5073,7 @@
       },
       {
         "Name": "Requested Operation: Alloy Latticing",
-        "Time": "90",
+        "Time": "45",
         "OutQty": "1",
         "InId": [
           "COLD1",
@@ -5026,7 +5088,7 @@
       },
       {
         "Name": "Requested Operation: Alloy Latticing",
-        "Time": "90",
+        "Time": "45",
         "OutQty": "1",
         "InId": [
           "COLD1",
@@ -5041,7 +5103,7 @@
       },
       {
         "Name": "Requested Operation: Alloy Latticing",
-        "Time": "90",
+        "Time": "45",
         "OutQty": "1",
         "InId": [
           "COLD1",
@@ -5056,7 +5118,7 @@
       },
       {
         "Name": "Requested Operation: Alloy Latticing",
-        "Time": "90",
+        "Time": "45",
         "OutQty": "1",
         "InId": [
           "COLD1",
@@ -5073,7 +5135,7 @@
     "REACTION1": [
       {
         "Name": "Requested Operation: High-Speed Sublimation",
-        "Time": "90",
+        "Time": "45",
         "OutQty": "1",
         "InId": [
           "GAS1",
@@ -5088,7 +5150,7 @@
       },
       {
         "Name": "Requested Operation: High-Speed Sublimation",
-        "Time": "90",
+        "Time": "45",
         "OutQty": "1",
         "InId": [
           "GAS1",
@@ -5103,7 +5165,7 @@
       },
       {
         "Name": "Requested Operation: High-Speed Sublimation",
-        "Time": "90",
+        "Time": "45",
         "OutQty": "1",
         "InId": [
           "GAS1",
@@ -5118,7 +5180,7 @@
       },
       {
         "Name": "Requested Operation: High-Speed Sublimation",
-        "Time": "90",
+        "Time": "45",
         "OutQty": "1",
         "InId": [
           "GAS1",
@@ -5135,7 +5197,7 @@
     "REACTION2": [
       {
         "Name": "Requested Operation: High-Speed Sublimation",
-        "Time": "90",
+        "Time": "45",
         "OutQty": "1",
         "InId": [
           "GAS2",
@@ -5150,7 +5212,7 @@
       },
       {
         "Name": "Requested Operation: High-Speed Sublimation",
-        "Time": "90",
+        "Time": "45",
         "OutQty": "1",
         "InId": [
           "GAS2",
@@ -5165,7 +5227,7 @@
       },
       {
         "Name": "Requested Operation: High-Speed Sublimation",
-        "Time": "90",
+        "Time": "45",
         "OutQty": "1",
         "InId": [
           "GAS2",
@@ -5180,7 +5242,7 @@
       },
       {
         "Name": "Requested Operation: High-Speed Sublimation",
-        "Time": "90",
+        "Time": "45",
         "OutQty": "1",
         "InId": [
           "GAS2",
@@ -5197,7 +5259,7 @@
     "REACTION3": [
       {
         "Name": "Requested Operation: High-Speed Sublimation",
-        "Time": "90",
+        "Time": "45",
         "OutQty": "1",
         "InId": [
           "GAS3",
@@ -5212,7 +5274,7 @@
       },
       {
         "Name": "Requested Operation: High-Speed Sublimation",
-        "Time": "90",
+        "Time": "45",
         "OutQty": "1",
         "InId": [
           "GAS3",
@@ -5227,7 +5289,7 @@
       },
       {
         "Name": "Requested Operation: High-Speed Sublimation",
-        "Time": "90",
+        "Time": "45",
         "OutQty": "1",
         "InId": [
           "GAS3",
@@ -5242,7 +5304,7 @@
       },
       {
         "Name": "Requested Operation: High-Speed Sublimation",
-        "Time": "20",
+        "Time": "10",
         "OutQty": "1",
         "InId": [
           "GAS3",
