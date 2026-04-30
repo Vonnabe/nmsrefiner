@@ -50,6 +50,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     // --- 3. UI RENDERING FUNCTIONS ---
 function renderModalItems(searchTerm = "") {
+    
     if (!nmsDatabase) return;
     selectorGrid.innerHTML = '';
 
@@ -67,17 +68,20 @@ function renderModalItems(searchTerm = "") {
                 const count = recipe.InId.length;
                 const level = count === 3 ? "MK-III" : (count === 2 ? "MK-II" : "MK-I");
                 const typeName = count === 3 ? "large" : (count === 2 ? "medium" : "small");
+                const outQuantity = recipe.OutQty || "1";
 
                 const div = document.createElement('div');
                 div.className = `material-option`;
                 
                 div.innerHTML = `
-                    <div class="refiner-badge ${typeName}">${level}</div>
-                    <div class="slot-icon" style="width:90px; height:90px; margin: 0 auto;">
-                        <img src="icons/${outputId}.png" onerror="this.src='icons/default.png'; this.onerror=null;">
-                    </div>
-                    <span class="mat-name">${matInfo.Name}</span>
-                `;
+                        <div class="refiner-badge ${typeName}">${level}</div>
+                        <div class="slot-icon" style="width:90px; height:90px; margin: 0 auto;">
+                            <img src="icons/${outputId}.png" onerror="this.src='icons/default.png'; this.onerror=null;">
+                            <!-- Added OutQty Badge here -->
+                            <div class="modal-out-qty">x${outQuantity}</div>
+                        </div>
+                        <span class="mat-name">${matInfo.Name}</span>
+                    `;
                 
                 div.onclick = () => selectRecipe(outputId, index);
                 selectorGrid.appendChild(div);
@@ -92,6 +96,10 @@ function renderModalItems(searchTerm = "") {
 function selectRecipe(outputId, recipeIndex) {
     const recipe = nmsDatabase.recipes[outputId][recipeIndex];
     const outputMat = nmsDatabase.mats[outputId];
+    
+    
+
+
 
     // --- 1. DETERMINE REFINER TYPE ---
     const ingredientCount = recipe.InId.length;
@@ -105,6 +113,31 @@ function selectRecipe(outputId, recipeIndex) {
         type = 'large';
         refinerName = "Large Refiner // MK-III";
     }
+
+    // Lock tabs
+    tabs.forEach(btn => {
+        const btnType = btn.getAttribute('data-type');
+        btn.classList.remove('active');
+    
+        // Determine if this specific tab is too small for the recipe
+        const isTooSmall = (ingredientCount > 1 && btnType === 'small') || 
+                        (ingredientCount > 2 && btnType === 'medium');
+
+        if (isTooSmall) {
+            btn.classList.add('locked');
+            btn.style.pointerEvents = 'none'; // Only disables the BUTTON
+            btn.style.opacity = '0.3';
+        } else {
+            btn.classList.remove('locked');
+            btn.style.pointerEvents = 'auto'; // Re-enables the BUTTON
+            btn.style.opacity = '1';
+        }
+
+        // Activate the tab that matches the recipe's requirement
+        if (btnType === type) {
+            btn.classList.add('active');
+        }
+    });
 
     // --- 2. UPDATE GRID VISIBILITY ---
     gridContainer.className = 'refiner-grid'; 
@@ -178,6 +211,7 @@ for (let i = 1; i <= 3; i++) {
 
 // --- 4. EVENT LISTENERS ---
     outputSlot.addEventListener('click', () => {
+        console.log("Output Slot Clicked!");
     modal.style.display = 'flex';
     const currentSearch = searchInput.value;
     renderModalItems(currentSearch); 
@@ -238,46 +272,62 @@ clearBtn.addEventListener('click', () => {
     }
 
     console.log("Terminal Purged: System returned to MK-I default.");
+
+    tabs.forEach(btn => {
+        btn.classList.remove('active', 'locked');
+        btn.style.pointerEvents = 'auto';
+        btn.style.opacity = '1';
+        
+        if (btn.getAttribute('data-type') === 'small') {
+            btn.classList.add('active');
+        }
+    });
+
+    console.log("Terminal Purged: Tabs Unlocked.");
 });
 
     aboutOpen.onclick = () => aboutModal.style.display = 'flex';
     aboutClose.onclick = () => aboutModal.style.display = 'none';
 
-    initializeTravellerUplink();
-});
+    
+    function initializeTravellerUplink() {
+        const display = document.getElementById('live-count');
+        if (!display) return;
+        let currentTravellers = Math.floor(Math.random() * 30) + 12;
+        setInterval(() => {
+            const roll = Math.random();
+            if (roll > 0.85) currentTravellers++;
+            else if (roll < 0.15) currentTravellers--;
+            currentTravellers = Math.max(8, Math.min(86, currentTravellers));
+            display.innerText = currentTravellers.toString().padStart(4, '0');
+        }, 4000);
 
-function initializeTravellerUplink() {
-    const display = document.getElementById('live-count');
-    if (!display) return;
-    let currentTravellers = Math.floor(Math.random() * 30) + 12;
-    setInterval(() => {
-        const roll = Math.random();
-        if (roll > 0.85) currentTravellers++;
-        else if (roll < 0.15) currentTravellers--;
-        currentTravellers = Math.max(8, Math.min(86, currentTravellers));
-        display.innerText = currentTravellers.toString().padStart(4, '0');
-    }, 4000);
+        const patchModal = document.getElementById('patch-modal');
+        const patchBtn = document.getElementById('patch-notes-open');
+        const patchClose = document.getElementById('patch-close');
 
-const patchModal = document.getElementById('patch-modal');
-const patchBtn = document.getElementById('patch-notes-open');
-const patchClose = document.getElementById('patch-close');
+        patchBtn.addEventListener('click', () => {
+            patchModal.style.display = 'flex';
+        });
 
-// Open Patch Notes
-patchBtn.addEventListener('click', () => {
-    patchModal.style.display = 'flex';
-});
+        patchClose.addEventListener('click', () => {
+            patchModal.style.display = 'none';
+        });
 
-// Close Patch Notes
-patchClose.addEventListener('click', () => {
-    patchModal.style.display = 'none';
-});
-
-// Close when clicking outside the window
-window.addEventListener('click', (event) => {
-    if (event.target === patchModal) {
-        patchModal.style.display = 'none';
+        window.addEventListener('click', (event) => {
+            if (event.target === patchModal) {
+                patchModal.style.display = 'none';
+            }
+            if (event.target === aboutModal) {
+                aboutModal.style.display = 'none';
+            }
+        });
     }
+
+    initializeTravellerUplink();
+
 });
-}
+
+
 
 
