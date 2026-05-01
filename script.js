@@ -52,56 +52,53 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     // --- 3. UI RENDERING FUNCTIONS ---
 function renderModalItems(searchTerm = "") {
-    
     if (!nmsDatabase) return;
     selectorGrid.innerHTML = '';
 
     const lowerSearch = searchTerm.toLowerCase().trim();
 
-    for (const [outputId, recipesArray] of Object.entries(nmsDatabase.recipes)) {
-        const matInfo = nmsDatabase.mats[outputId];
-        if (!matInfo) continue;
+    for (const [outputId, matInfo] of Object.entries(nmsDatabase.mats)) {
+        if (!nmsDatabase.recipes[outputId]) continue;
 
         const nameMatch = matInfo.Name.toLowerCase().includes(lowerSearch);
         const symbolMatch = matInfo.Symbol && matInfo.Symbol.toLowerCase().includes(lowerSearch);
 
         if (nameMatch || symbolMatch || lowerSearch === "") {
-            recipesArray.forEach((recipe, index) => {
-                const count = recipe.InId.length;
-                const level = count === 3 ? "MK-III" : (count === 2 ? "MK-II" : "MK-I");
-                const typeName = count === 3 ? "large" : (count === 2 ? "medium" : "small");
-                const outQuantity = recipe.OutQty || "1";
-
-                const div = document.createElement('div');
-                div.className = `material-option`;
-                
-                div.innerHTML = `
-                        <div class="refiner-badge ${typeName}">${level}</div>
-                        <div class="slot-icon" style="width:90px; height:90px; margin: 0 auto;">
-                            <img src="icons/${outputId}.png" onerror="this.src='icons/default.png'; this.onerror=null;">
-                            <!-- Added OutQty Badge here -->
-                            <div class="modal-out-qty">x${outQuantity}</div>
-                        </div>
-                        <span class="mat-name">${matInfo.Name}</span>
-                    `;
-                
-                div.onclick = () => selectRecipe(outputId, index);
-                selectorGrid.appendChild(div);
-            });
+            const div = document.createElement('div');
+            div.className = `material-option`;
+            
+            div.innerHTML = `
+                <div class="slot-icon" style="width:90px; height:90px; margin: 0 auto;">
+                    <img src="icons/${outputId}.png" onerror="this.src='icons/default.png'; this.onerror=null;">
+                </div>
+                <span class="mat-name">${matInfo.Name}</span>
+            `;
+            
+            // Fix: Only one onclick, and it must be inside this block
+            div.onclick = () => {
+                outputSlot.dataset.currentId = outputId; 
+                showRecipeList(outputId); // Call the list view, not selectRecipe
+            };
+            
+            selectorGrid.appendChild(div);
         }
+        // REMOVED the extra div.onclick that was here
     }
+    
     if (selectorGrid.children.length === 0) {
         selectorGrid.innerHTML = `<div class="error" style="grid-column: 1/-1;">NO_MATCHING_SIGNALS</div>`;
     }
 }
 
 function selectRecipe(outputId, recipeIndex) {
+
+    if (!nmsDatabase.recipes[outputId] || !nmsDatabase.recipes[outputId][recipeIndex]) {
+        console.error("Signal Lost: Recipe not found in database.");
+        return;
+    }
+
     const recipe = nmsDatabase.recipes[outputId][recipeIndex];
     const outputMat = nmsDatabase.mats[outputId];
-    
-    
-
-
 
     // --- 1. DETERMINE REFINER TYPE ---
     const ingredientCount = recipe.InId.length;
@@ -209,6 +206,54 @@ for (let i = 1; i <= 3; i++) {
         </div>
     `;
     modal.style.display = 'none';
+}
+
+function showRecipeList(outputId) {
+    const recipes = nmsDatabase.recipes[outputId];
+    const matInfo = nmsDatabase.mats[outputId];
+    
+    // 1. Clear the material grid
+    selectorGrid.innerHTML = '';
+    
+    // 2. Optional: Add a 'Back' button to return to the full material list
+    const backBtn = document.createElement('div');
+    backBtn.className = 'material-option';
+    backBtn.style.borderColor = 'var(--atlas-red)';
+    backBtn.innerHTML = `<span class="mat-name">← RETURN TO DATABASE</span>`;
+    backBtn.onclick = () => renderModalItems(document.getElementById('mat-search').value);
+    selectorGrid.appendChild(backBtn);
+
+    // 3. Render every recipe found for this material
+    recipes.forEach((recipe, index) => {
+        const div = document.createElement('div');
+        div.className = 'material-option recipe-card';
+        
+        // Determine MK tier based on ingredient count
+        const count = recipe.InId.length;
+        const tier = count === 1 ? 'small' : count === 2 ? 'medium' : 'large';
+
+        div.innerHTML = `
+            <div class="refiner-badge ${tier}">${tier.toUpperCase()}</div>
+<div class="recipe-ingredients" style="display:flex; justify-content:center; align-items:center; gap:15px; margin:10px 0;">
+    ${recipe.InId.map(id => {
+        const name = nmsDatabase.mats[id]?.Name || "Unknown Material";
+        return `
+            <div style="display:flex; flex-direction:column; align-items:center; gap:5px;">
+                <img src="icons/${id}.png" style="width:50px; height:50px;" title="${name}">
+                <span style="font-size:0.6rem; color:rgba(255,255,255,0.7); text-transform:uppercase; max-width:60px; text-align:center;">
+                    ${name}
+                </span>
+            </div>
+        `;
+    }).join(' <span style="opacity:0.5; font-size:1.2rem; margin-bottom:20px;">+</span> ')}
+</div>
+            <div class="modal-out-qty">x${recipe.OutQty || 1}</div>
+        `;
+
+        // 4. Clicking this SPECIFIC recipe finally calls your original selectRecipe
+        div.onclick = () => selectRecipe(outputId, index);
+        selectorGrid.appendChild(div);
+    });
 }
 
 // --- 4. EVENT LISTENERS ---

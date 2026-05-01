@@ -928,3 +928,27 @@ input[type="text"] {
     font-size: 0.6rem;
     vertical-align: middle;
 }
+
+/* Container for icons inside the recipe list */
+.recipe-ingredients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin: 10px 0;
+}
+
+.mini-icon {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    filter: drop-shadow(0 0 2px rgba(255,255,255,0.2));
+}
+
+.recipe-card {
+    min-height: 120px;
+    border-left: 2px solid var(--ui-teal);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
