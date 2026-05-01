@@ -1,5 +1,7 @@
 let nmsDatabase = null;
 
+//testings
+
 document.addEventListener('DOMContentLoaded', async () => {
     
     // --- 1. LOAD DATABASE ---
