@@ -68,7 +68,7 @@ function renderModalItems(searchTerm = "") {
             div.className = `material-option`;
             
             div.innerHTML = `
-                <div class="slot-icon" style="width:90px; height:90px; margin: 0 auto;">
+                <div class="slot-icon" style="width:60px; height:60px; margin: 0 auto;">
                     <img src="icons/${outputId}.png" onerror="this.src='icons/default.png'; this.onerror=null;">
                 </div>
                 <span class="mat-name">${matInfo.Name}</span>
