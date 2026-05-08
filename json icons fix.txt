@@ -1,0 +1,7 @@
+
+git link : https://gist.github.com/sclark39/e833b056e8459bcdaf3c7b670884a18f#file-nmsrefinerrecipes-json
+
+icons from: https://app.nmsassistant.com/catalogue/RawMaterials-Products-TradeItems-Buildings-Curiosity-Cooking-Technology-TechnologyModule-ConstructedTechnology-Others-ProceduralProducts
+
+
+***MAKE JSON RECIPES SORT LOWER OUTPUT TO HIGHER*** -ABOVE MAGNETIZED FERRITE
