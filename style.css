@@ -952,3 +952,34 @@ input[type="text"] {
     flex-direction: column;
     justify-content: space-between;
 }
+
+.floating-drone {
+    position: fixed;
+    width: 60px; /* Adjust size as needed */
+    height: 60px;
+    z-index: 9998;
+    pointer-events: none; /* Allows users to click through them */
+    filter: drop-shadow(0 0 12px var(--ui-teal));
+    opacity: 0.8;
+    
+    /* Smooth movement transition */
+    transition: left 5s ease-in-out, top 5s ease-in-out;
+}
+
+/* Give each one a slightly different ambient animation speed so they don't move in unison */
+.drone-0 { animation: droneHoverA 3.5s ease-in-out infinite alternate; }
+.drone-1 { animation: droneHoverB 4.2s ease-in-out infinite alternate; }
+.drone-2 { animation: droneHoverC 3s ease-in-out infinite alternate; }
+
+@keyframes droneHoverA {
+    0% { transform: translateY(0px) rotate(0deg); }
+    100% { transform: translateY(-10px) rotate(8deg); }
+}
+@keyframes droneHoverB {
+    0% { transform: translateY(-5px) rotate(-4deg); }
+    100% { transform: translateY(5px) rotate(4deg); }
+}
+@keyframes droneHoverC {
+    0% { transform: translateY(4px) rotate(2deg); }
+    100% { transform: translateY(-6px) rotate(-6deg); }
+}

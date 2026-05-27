@@ -375,6 +375,53 @@ clearBtn.addEventListener('click', () => {
 
 });
 
+function initializeFloatingDrones() {
+    const container = document.getElementById('drone-container');
+    if (!container) return;
+
+    const numberOfDrones = 3;
+    const droneElements = [];
+
+    // 1. Generate the 3 items dynamically
+    for (let i = 0; i < numberOfDrones; i++) {
+        const img = document.createElement('img');
+        img.src = 'beeupdate.png'; // Replace with your image filename
+        img.className = `floating-drone drone-${i}`;
+        img.alt = `System Anomalous Signal ${i + 1}`;
+        img.onerror = function() { this.src = 'icons/default.png'; };
+        
+        container.appendChild(img);
+        droneElements.push(img);
+        
+        // Give it an initial position immediately
+        relocateSingleDrone(img);
+    }
+
+    // 2. Helper function to calculate random screen space paths
+    function relocateSingleDrone(drone) {
+        const maxX = window.innerWidth - 80;
+        const maxY = window.innerHeight - 80;
+
+        const randomX = Math.floor(Math.random() * maxX);
+        const randomY = Math.floor(Math.random() * maxY);
+
+        drone.style.left = `${randomX}px`;
+        drone.style.top = `${randomY}px`;
+    }
+
+    // 3. Command each drone to shift positions independently on staggered intervals
+    droneElements.forEach((drone, index) => {
+        // Stagger the initial movement timers so they don't all look for a new path at the exact same millisecond
+        setTimeout(() => {
+            setInterval(() => {
+                relocateSingleDrone(drone);
+            }, 5000); // Path-finding loop frequency (5 seconds)
+        }, index * 1200); // Delays the start times by 1.2 seconds per drone
+    });
+}
+
+// Call this inside your DOMContentLoaded block
+initializeFloatingDrones();
 
 
 
